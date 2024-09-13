@@ -1,8 +1,37 @@
-blinker==1.8.2
-click==8.1.7
-Flask==3.0.3
-Flask-Cors==5.0.0
-itsdangerous==2.2.0
-Jinja2==3.1.4
-MarkupSafe==2.1.5
-Werkzeug==3.0.4
+blinker==1.8.2              # Signals support for Flask extensions
+click==8.0.1                # CLI toolkit used by Flask, compatible with Flask 2.x
+Flask==2.0.1                # Flask core framework, compatible with Flask-JWT-Extended
+Flask-Cors==3.0.10          # Flask extension for handling CORS, compatible with Flask 2.x
+itsdangerous==2.0.1         # Provides cryptographic tools for Flask, compatible with Flask 2.x
+Jinja2==3.0.1               # Flask's default templating engine, compatible with Flask 2.x
+MarkupSafe==2.0.1           # Used by Jinja2 for escaping text, compatible with Flask 2.x
+Werkzeug==2.0.1             # WSGI utility library, compatible with Flask 2.x
+Flask-JWT-Extended==4.2.3   # JWT support, compatible with Flask < 3.0
+Flask-Migrate==3.1.0        # Database migration tool, works with SQLAlchemy and Flask 2.x
+Flask-SQLAlchemy==2.5.1     # Adds SQLAlchemy support to Flask, compatible with Flask 2.x
+alembic==1.6.5              # Database migration tool, compatible with SQLAlchemy and Flask
+aniso8601==9.0.1            # Used for date/time string parsing, compatible with Flask 2.x
+attrs==21.2.0               # For better class handling and validation, no known conflicts
+black==22.12.0              # Python code formatter, compatible with modern Python versions
+colorama==0.4.4             # Cross-platform colored terminal text support, no Flask dependencies
+flask-restx==0.5.0          # Flask extension for building REST APIs, compatible with Flask 2.x
+greenlet==2.0.1             # Concurrency support, required by SQLAlchemy, compatible with Flask
+gunicorn==20.1.0            # WSGI HTTP server, compatible with Flask 2.x
+iniconfig==2.0.0            # Configuration file parsing support for pytest, no Flask dependencies
+jsonschema==3.2.0           # JSON schema validation, compatible with Flask 2.x
+Mako==1.1.4                 # Templating engine, no conflicts with Flask’s Jinja2
+mypy-extensions==0.4.3      # Mypy static typing extensions, safe to add
+packaging==23.0             # Provides utility for dealing with package versions, no conflicts
+pathspec==0.10.3            # Utility library for matching file paths, used in formatting tools like Black
+platformdirs==2.6.2         # For determining platform-specific directories, no conflicts with Flask
+pluggy==1.0.0               # Plugin management framework, compatible with pytest
+PyJWT==2.1.0                # JWT library for Python, works with Flask-JWT-Extended
+pyrsistent==0.18.0          # Persistent data structures for Python, no known issues
+pytest==7.2.1               # Testing framework, works fine alongside Flask
+python-dateutil==2.8.2      # Date and time parsing utility, no conflicts with Flask
+python-decouple==3.4        # Utility for config management, compatible with Flask
+python-dotenv==0.21.0       # Load environment variables from `.env` files, widely used in Flask projects
+python-editor==1.0.4        # Used by Alembic for database migrations, no issues with Flask
+pytz==2021.1                # Timezone management, no known conflicts with Flask
+six==1.16.0                 # Python 2 and 3 compatibility library, used by many packages in the list
+SQLAlchemy==1.4.22          # ORM library, works with Flask-SQLAlchemy and compatible with Flask 2.x
