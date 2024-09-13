@@ -3,8 +3,7 @@ config.py - Configuration module for the TreeMatchApp server.
 ------------------------------------------------------
 This module defines configuration classes for different environments
 (development, production, and testing) using environment variables to set
-configuration values. It uses the `decouple` and `dotenv` libraries to manage
-environment variables.
+configuration values. The configuration classes inherit from a base Config.
 """
 import os
 from decouple import config
@@ -33,7 +32,7 @@ class DevConfig(Config):
     """
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI", "sqlite:///dev.db")
     DEBUG = True
-    # SQLALCHEMY_ECHO=True
+    SQLALCHEMY_ECHO = True
 
 
 class ProdConfig(Config):

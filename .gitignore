@@ -1,3 +1,7 @@
 venv
 server/.gitignore
 server/__pycache__/config.cpython-310.pyc
+models/
+tests/
+practice code/
+api/
