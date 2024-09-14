@@ -1,3 +1,4 @@
+from werkzeug.security import check_password_hash
 from exts import db
 
 
@@ -63,3 +64,7 @@ class User(db.Model):
         """
         db.session.add(self)
         db.session.commit()
+
+    def check_password(self, password):
+        """Check if the provided password matches the stored hashed password."""
+        return check_password_hash(self.password, password)
