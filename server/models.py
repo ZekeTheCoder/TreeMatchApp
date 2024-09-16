@@ -1,5 +1,20 @@
+#!/usr/bin/env python3
+""" models.py - Module for defining the database model.
+------------------------------------------------------
+This module defines the Plant and User classes for the TreeMatchApp server.
+The Plant class represents a plant object with title and description attributes.
+The User class represents a user object with username, email, and password attributes.
+"""
+# Ignore Pylint no-member errors for db.session
+# pylint: disable=E1101
 from werkzeug.security import check_password_hash
+from sqlalchemy import Column, String, Integer, Text
 from exts import db
+
+# from flask_sqlalchemy import SQLAlchemy
+# db = SQLAlchemy()
+
+# plant model
 
 
 class Plant(db.Model):
@@ -10,9 +25,9 @@ class Plant(db.Model):
         description: str (text)
     """
 
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String, nullable=False)
-    description = db.Column(db.String, nullable=False)
+    id = Column(Integer, primary_key=True)
+    title = Column(String, nullable=False)
+    description = Column(String, nullable=False)
 
     def __repr__(self):
         """string representation"""
@@ -36,21 +51,19 @@ class Plant(db.Model):
 
 
 # user model
-
-"""
-class User:
-    id:integer
-    username:string
-    email:string
-    password:string
-"""
-
-
 class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(25), nullable=False, unique=True)
-    email = db.Column(db.String(80), nullable=False)
-    password = db.Column(db.Text(), nullable=False)
+    """
+    class User:
+        id:integer
+        username:string
+        email:string
+        password:string
+    """
+
+    id = Column(Integer, primary_key=True)
+    username = Column(String(25), nullable=False, unique=True)
+    email = Column(String(80), nullable=False)
+    password = Column(Text(), nullable=False)
 
     def __repr__(self):
         """
