@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 config.py - Configuration module for the TreeMatchApp server.
 ------------------------------------------------------
