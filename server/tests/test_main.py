@@ -69,7 +69,83 @@ class APITestCase(unittest.TestCase):
         self.assertIn('access_token', login_response.json)
         self.assertIn('refresh_token', login_response.json)
 
+    def test_logout(self):
+        """Test the logout functionality to ensure that the JWT token is blacklisted"""
+
+        signup_response = self.client.post(
+            "/auth/signup",
+            json={
+                "username": "testuser",
+                "email": "testuser@test.com",
+                "password": "password",
+            },
+        )
+
+        login_response = self.client.post(
+            "/auth/login", json={"username": "testuser", "password": "password"}
+        )
+
+        status_code = login_response.status_code
+        access_token = login_response.json["access_token"]
+        # print('status code:', status_code)
+        # print('Login response:', access_token)
+
+        # Log out
+        logout_response = self.client.post(
+            "/auth/logout",
+            headers={"Authorization": f"Bearer {access_token}"}
+        )
+
+        # Check the response
+        self.assertEqual(logout_response.status_code, 200)
+        self.assertEqual(
+            logout_response.json["message"], "Successfully logged out")
+
+    def test_refresh(self):
+        """Test the /refresh endpoint to ensure it issues a new access token"""
+
+        signup_response = self.client.post(
+            "/auth/signup",
+            json={
+                "username": "testuser",
+                "email": "testuser@test.com",
+                "password": "password",
+            },
+        )
+
+        # Log in to get access and refresh tokens
+        login_response = self.client.post(
+            "/auth/login",
+            json={"username": "testuser", "password": "password"}
+        )
+
+        # print('Login response:', login_response.json)
+        # Check if refresh_token is in the response
+        self.assertIn('refresh_token', login_response.json,
+                      'Login response does not contain refresh_token')
+        refresh_token = login_response.json["refresh_token"]
+
+        # print('refresh_token:', refresh_token)
+        # Refresh the access token
+        refresh_response = self.client.post(
+            "/auth/refresh",
+            headers={"Authorization": f"Bearer {refresh_token}"}
+        )
+
+        # print('refresh_response:', refresh_response.json)
+        # Check the response
+        self.assertEqual(refresh_response.status_code, 200)
+        self.assertIn('access_token', refresh_response.json,
+                      'Refresh response does not contain access_token')
+
+        # Ensure the new access token is different from the old one
+        new_access_token = refresh_response.json["access_token"]
+        self.assertNotEqual(
+            new_access_token, login_response.json["access_token"], 'The new access token should be different from the old one')
+
+
 # Test Plant Functionality
+
     def test_get_all_plants(self):
         """Get all plants"""
         response = self.client.get("/plants/plants")
