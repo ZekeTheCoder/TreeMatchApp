@@ -6,16 +6,22 @@ This module defines the authentication resources for the TreeMatchApp server.
 It includes the SignUp, Login, and RefreshResource classes for handling user
 signup, login, and token refresh endpoints.
 """
+from flask_jwt_extended import JWTManager
 from flask_restx import Resource, Namespace, fields
 from flask import request, jsonify, make_response
 from flask_jwt_extended import (
+    JWTManager,
     create_access_token,
     create_refresh_token,
     get_jwt_identity,
     jwt_required,
+    get_jwt,
 )
 from werkzeug.security import generate_password_hash  # , check_password_hash
 from models import User
+
+# Define the blacklist set to store token JTI values
+blacklist = set()
 
 
 auth_ns = Namespace(
@@ -119,3 +125,32 @@ class RefreshResource(Resource):
         current_user = get_jwt_identity()
         new_access_token = create_access_token(identity=current_user)
         return make_response(jsonify({"access_token": new_access_token}), 200)
+
+
+@auth_ns.route('/logout')
+class Logout(Resource):
+    """Logout Resource class for handling user logout."""
+    @jwt_required()
+    def post(self):
+        """ POST method for logging out the user by revoking their JWT.
+        Returns:
+            A JSON response confirming logout.
+        """
+        # Log request cookies or session info
+        # print('Request cookies:', request.cookies)
+        jti = get_jwt()["jti"]  # JTI is the unique identifier for a JWT
+        print(f'unique identifier for a JWT: {jti}')
+        blacklist.add(jti)  # Add the JTI of the token to the blacklist
+        print(f'Blacklisted JWT: {blacklist}')
+        return {"message": "Successfully logged out"}, 200
+
+
+# Ensure you handle the blacklist check when validating tokens
+
+# jwt = JWTManager()
+
+
+# @jwt.token_in_blocklist_loader
+# def check_if_token_is_blacklisted(jwt_header, jwt_payload):
+#     jti = jwt_payload["jti"]
+#     return jti in blacklist
