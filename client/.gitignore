@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# files and folders
+practice_code
+src/components1
+src/New folder
+.env
