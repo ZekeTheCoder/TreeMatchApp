@@ -1,0 +1,24 @@
+import axios from "axios";
+
+axios.defaults.baseURL = 'http://localhost:5000/';
+
+let refresh = false;
+
+axios.interceptors.response.use(resp => resp, async error => {
+    if (error.response.status === 401 && !refresh) {
+        refresh = true;
+
+        const response = await axios.post('http://localhost:5000/auth/refresh', {}, {withCredentials: true});
+
+        if (response.status === 200) {
+            axios.defaults.headers.common['Authorization'] = `Bearer ${response.data['access_token']}`;
+			const { access_token } = response.data;
+			console.log('authToken: ' + access_token);
+			localStorage.setItem("authToken", access_token);
+
+            return axios(error.config);
+        }
+    }
+    refresh = false;
+    return error;
+});
