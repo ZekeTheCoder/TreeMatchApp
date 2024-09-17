@@ -29,7 +29,7 @@ def create_app(config):
     db.init_app(app)
     migrate = Migrate(app, db)
     jwt = JWTManager(app)
-    CORS(app)
+    CORS(app, supports_credentials=True)  # Allow credentials
 
     @app.shell_context_processor
     def make_shell_context():
