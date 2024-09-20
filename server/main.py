@@ -12,8 +12,10 @@ from flask_restx import Api
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
 from plants import plants_ns
+from invasive_plants import invasive_plants_ns
 from auth import auth_ns
 from models import Plant, User
+from invasive_plants_model import InvasivePlant
 from exts import db
 
 
@@ -26,6 +28,7 @@ def create_app(config):
     api = Api(app, doc="/docs")
     api.add_namespace(auth_ns)
     api.add_namespace(plants_ns)
+    api.add_namespace(invasive_plants_ns)
     db.init_app(app)
     migrate = Migrate(app, db)
     jwt = JWTManager(app)
@@ -42,6 +45,7 @@ def create_app(config):
         return {
             'db': db,
             'Plant': Plant,
+            'InvasivePlant': InvasivePlant,
             'User': User}
 
     return app
