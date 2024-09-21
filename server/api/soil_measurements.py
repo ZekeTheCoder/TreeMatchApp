@@ -10,6 +10,7 @@ from flask_restx import Resource, Namespace, fields
 from flask_jwt_extended import jwt_required
 from flask import request
 from models.soil_property_model import SoilMeasurement
+from utils import get_soil_property, get_recommendation
 
 soil_measurements_ns = Namespace(
     'soil_measurements', description='A namespace for Soil Measurement related operations')
@@ -131,62 +132,39 @@ class GetSoilPropertyResource(Resource):
     @soil_measurements_ns.doc(params={
         'latitude': 'Latitude of the location',
         'longitude': 'Longitude of the location',
-        'property_name': 'The soil property to query (e.g., "ph")',
-        'depth': 'The depth at which the property is measured (e.g., "0-20")'
+        'property_name': 'The soil property to query (e.g., "ph")'
     })
     def get(self):
         lat = request.args.get('latitude', type=float)
         lon = request.args.get('longitude', type=float)
         property_name = request.args.get('property_name', type=str)
-        depth = request.args.get('depth', type=str)
         auth_header = request.headers.get('Authorization')
 
-        if not lat or not lon or not property_name or not depth:
+        if not lat or not lon or not property_name:
             return {'message': 'Missing required parameters'}, 400
 
-        result = get_soil_property(lat, lon, property_name, depth, auth_header)
+        result = get_soil_property(lat, lon, property_name)
         return result, 200
 
 
-def get_soil_property(lat: float, lon: float, property_name: str, depth: str, auth_header: str) -> dict:
-    """
-    Calls the soil property API to retrieve information for a specific location.
+@soil_measurements_ns.route('/get_recommendation')
+class GetRecommendationResource(Resource):
+    # @jwt_required()
+    @soil_measurements_ns.doc(params={
+        'latitude': 'Latitude of the location',
+        'longitude': 'Longitude of the location',
+        'property_name': 'The soil property to query (e.g., "ph","bulk_density")',
+        'value': 'The value of the property is measured (e.g., "6.5")'
+    })
+    def get(self):
+        lat = request.args.get('latitude', type=float)
+        lon = request.args.get('longitude', type=float)
+        property_name = request.args.get('property_name', type=str)
+        value = request.args.get('value', type=float)
+        # auth_header = request.headers.get('Authorization')
 
-    Args:
-        lat (float): Latitude of the location.
-        lon (float): Longitude of the location.
-        property_name (str): The soil property to query (e.g., "ph").
-        depth (str): The depth at which the property is measured (e.g., "0-20").
-        auth_header (str): The authorization header to include in the request.
+        if not lat or not lon or not property_name or not value:
+            return {'message': 'Missing required parameters'}, 400
 
-    Returns:
-        dict: The response from the API as a JSON object.
-    """
-    # Define the API key and the base URL
-    api_key = "AIzaSyCruMPt43aekqITCooCNWGombhbcor3cf4"
-    base_url = "https://api.isda-africa.com/v1/soilproperty"
-
-    # Set up the query parameters
-    params = {
-        'key': api_key,
-        'lat': lat,
-        'lon': lon,
-        'property': property_name,
-        'depth': depth
-    }
-
-    # Print the URL for debugging
-    print(
-        f"Request URL: {base_url}?key={api_key}&lat={lat}&lon={lon}&property={property_name}&depth={depth}")
-
-    # Make the API request
-    try:
-        response = requests.get(base_url, params=params)
-        # Check if the request was successful
-        if response.status_code == 200:
-            return response.json()
-        else:
-            response.raise_for_status()  # Raises an HTTPError for bad responses
-    except requests.exceptions.RequestException as e:
-        print(f"Error making the API request: {e}")
-        return {}
+        result = get_recommendation(property_name, value)
+        return result, 200
