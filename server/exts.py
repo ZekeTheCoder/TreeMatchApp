@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import Column, String, Integer, Text
+from sqlalchemy import Column, String, Integer, Text, Float
 # from sqlalchemy.orm import scoped_session, sessionmaker
 # from flask_migrate import Migrate
 # from flask_cors import CORS

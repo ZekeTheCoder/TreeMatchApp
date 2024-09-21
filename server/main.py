@@ -11,11 +11,14 @@ from flask_cors import CORS
 from flask_restx import Api
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
-from plants import plants_ns
-from invasive_plants import invasive_plants_ns
-from auth import auth_ns
-from models import Plant, User
-from invasive_plants_model import InvasivePlant
+from api.plants import plants_ns
+from api.invasive_plants import invasive_plants_ns
+from api.soil_properties import soil_properties_ns, soil_locations_ns
+from api.soil_measurements import soil_measurements_ns
+from api.auth import auth_ns
+from models.models import Plant, User
+from models.invasive_plants_model import InvasivePlant
+from models.soil_property_model import SoilProperty, SoilMeasurement, SoilLocation
 from exts import db
 
 
@@ -29,6 +32,9 @@ def create_app(config):
     api.add_namespace(auth_ns)
     api.add_namespace(plants_ns)
     api.add_namespace(invasive_plants_ns)
+    api.add_namespace(soil_properties_ns)
+    api.add_namespace(soil_locations_ns)
+    api.add_namespace(soil_measurements_ns)
     db.init_app(app)
     migrate = Migrate(app, db)
     jwt = JWTManager(app)
@@ -46,6 +52,9 @@ def create_app(config):
             'db': db,
             'Plant': Plant,
             'InvasivePlant': InvasivePlant,
+            'SoilProperty': SoilProperty,
+            'SoilLocation': SoilLocation,
+            'SoilMeasurement': SoilMeasurement,
             'User': User}
 
     return app
