@@ -1,0 +1,32 @@
+Property|Description|Theme|Unit|Depths (cm)|Uncertainty|Type
+Aluminium, extractable|Aluminium, extractable|Soil chemical properties|ppm|0-20, 20-50|Yes|Float
+Bulk density, <2mm fraction|Bulk density, <2mm fraction|Soil physical properties and landscape|g/cc|0-20, 20-50|Yes|Float
+Calcium, extractable|Calcium, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+Carbon, organic|Carbon, organic|Soil chemical properties|g/kg|0-20, 20-50|Yes|Float
+Carbon, total|Carbon, total|Soil chemical properties|g/kg|0-20, 20-50|Yes|Float
+Clay content|Clay content|Soil physical properties and landscape|%|0-20, 20-50|Yes|Float
+Cropland (2015)|Cropland (2015)|Agronomy information|%|0|No|Float
+Cropland (2016)|Cropland (2016)|Agronomy information|%|0|No|Float
+Cropland (2017)|Cropland (2017)|Agronomy information|%|0|No|Float
+Cropland (2018)|Cropland (2018)|Agronomy information|%|0|No|Float
+Cropland (2019)|Cropland (2019)|Agronomy information|%|0|No|Float
+Depth to bedrock|Depth to bedrock|Soil physical properties and landscape|cm|0-200, 0-200|Yes|Float
+Effective Cation Exchange Capacity|Effective Cation Exchange Capacity|Soil chemical properties|cmol(+)/kg|0-20, 20-50|Yes|Float
+Iron, extractable|Iron, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+Land Cover (2015)|Land Cover (2015)|Agronomy information|N/A|0|No|String
+Land Cover (2016)|Land Cover (2016)|Agronomy information|N/A|0|No|String
+Land Cover (2017)|Land Cover (2017)|Agronomy information|N/A|0|No|String
+Land Cover (2018)|Land Cover (2018)|Agronomy information|N/A|0|No|String
+Land Cover (2019)|Land Cover (2019)|Agronomy information|N/A|0|No|String
+Magnesium, extractable|Magnesium, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+Nitrogen, total|Nitrogen, total|Soil chemical properties|g/kg|0-20, 20-50|Yes|Float
+Phosphorus, extractable|Phosphorus, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+Potassium, extractable|Potassium, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+Sand content|Sand content|Soil physical properties and landscape|%|0-20, 20-50|Yes|Float
+Silt content|Silt content|Soil physical properties and landscape|%|0-20, 20-50|Yes|Float
+Slope Angle|Slope Angle|Soil physical properties and landscape|°|0|No|Float
+Stone content|Stone content|Soil physical properties and landscape|%|0-20, 20-50|Yes|Float
+Sulphur, extractable|Sulphur, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+USDA Texture Class|USDA Texture Class|Soil physical properties and landscape|N/A|0-20, 20-50|No|String
+Zinc, extractable|Zinc, extractable|Soil nutrients|ppm|0-20, 20-50|Yes|Float
+pH|pH|Soil chemical properties|N/A|0-20, 20-50|Yes|Float

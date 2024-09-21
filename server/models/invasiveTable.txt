@@ -1,0 +1,526 @@
+ No.	|Scientific Name/Species	|Common Name	|Category/Area
+1	|Acacia adunca	|Cascade wattle, Wallangarra wattle	|1a
+2	|Acacia baileyana	|Bailey’s wattle	|3
+3	|Acacia cyclops	|Red eye	|1b
+4	|Acacia dealbata	|Silver wattle	|2
+5	|Acacia decurrens and hybrids, varieties and selections	|Green wattle	|2
+6	|Acacia elata	|Pepper tree wattle	|1b
+7	|Acacia fimbriata	|Fringed wattle, Brisbane wattle	|1a
+8	|Acacia implexa	|Screw pod wattle	|1a
+9	|Acacia longifolia	|Long-leaved wattle	|1b
+10	|Acacia mearnsii and hybrids, varieties and selections	|Black wattle	|2
+11	|Acacia melanoxylon and hybrids, varieties and selections	|Australian blackwood	|2
+12	|Acacia paradoxa	|Kangaroo thorn, Kangaroo wattle	|1a
+13	|Acacia podalyriifolia	|Pearl acacia	|1b
+14	|Acacia pycnantha	|Golden wattle	|1b
+15	|Acacia saligna	|Port Jackson, Port Jackson willow	|1b
+16	|Acacia stricta	|Hop wattle	|1a
+17	|Acer buergerianum	|Chinese maple	|See below a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West, Northern Cape, and Western Cape. b. Not listed in urban areas in the Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West, Northern Cape, and Western Cape. c. Not listed elsewhere
+18	|Acer negundo	|Ash-leaved maple, Box elder	|a. 3, b. Sterile cultivars or hybrids are not listed.
+19	|Agave americana subsp. americana var. expansa	|Spreading century-plant	|a. 3 in Western Cape. b. Not listed elsewhere.
+20	|Agave sisalana	|Sisal hemp, |Sisal	2
+21	|Ageratina adenophora	|Crofton weed	|1b
+22	|Ageratina riparia	|Mistflower	|1b
+23	|Ageratum conyzoides	|Invading ageratum	|1b
+24	|Ageratum houstonianum	|Mexican ageratum	|a. 1b, b. Sterile cultivars or hybrids are not listed.
+25	|Agrimonia procera	|Scented agrimony	|1b
+26	|Agrostis castellana	|Bent grass	|See below a. 1a Prince Edward Island. b. 1b Marion Island. c. Not listed on mainland or other off-shore islands.
+27	|Agrostis gigantea	|Black bent grass, Redtop	|See below a. 1a Prince Edward and Marion Islands. b. Not listed on mainland or other off-shore islands.
+28	|Agrostis stolonifera	|Creeping bent grass	|See below a. 1a Prince Edward Island. b. 1b Marion Island. c. Not listed on mainland or other off-shore islands.
+29	|Ailanthus altissima	|Tree-of-heaven	|1b
+30	|Albizia lebbeck	|Lebbeck tree	|1b
+31	|Albizia procera	|False lebbeck	|1b
+32	|Alhagi maurorum	|Camel thorn bush	|1b
+33	|Alisma plantago-aquatica	|Mud plantain, Water alisma	|1b
+34	|Alopecurus geniculatus	|Marsh foxtail, Water foxtail	|See below a. 1a Prince Edward and Marion Islands. b. Not listed on mainland or other off-shore islands.
+35	|Alpinia zerumbet	|Shell ginger, Pink porcelain lily	|3
+36	|Ammophila arenaria	|Marram grass	|3
+37	|Anredera cordifolia	|Madeira vine, Bridal wreath	|1b
+38	|Antigonon leptopus	|Coral creeper	|1b
+39	|Araujia sericifera	|Moth catcher	|1b
+40	|Ardisia crenata	|Coralberry tree, Coral Bush	|1b
+41	|Ardisia elliptica	|Shoebutton ardisia	|1b
+42	|Argemone mexicana	|Yellow-flowered Mexican poppy	|1b
+43	|Argemone ochroleuca	|White-flowered Mexican poppy	|1b
+44	|Aristolochia elegans	|Dutchman’s pipe	|1b
+45	|Arundo donax	|Giant reed, Spanish reed	|1b
+46	|Atriplex inflata	|Sponge-fruit saltbush	|1b
+47	|Atriplex nummularia subsp. nummularia	|Old man saltbush	|2
+48	|Austrocylindropuntia cylindrica	|Cane cactus	|1a
+49	|Austrocylindropuntia subulata	|Long spine cactus	|1b
+50	|Azolla cristata	|Tropical red water fern	|1b
+
+51	|Azolla filiculoides	|Azolla, Red water fern	|1b
+52	|Azolla pinnata subsp. asiatica	|Mosquito fern	|1b
+53	|Bartlettina sordida	|Bartlettina	|1b
+54	|Bauhinia purpurea	|Butterfly orchid tree	|See below a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga. b. 3 in Free State, Gauteng, North-West, Northern Cape and Western Cape.
+55	|Bauhinia variegata	|Orchid tree	|See below a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga. b. 3 in Free State, Gauteng, North-West, Northern Cape and Western Cape.
+56	|Berberis thunbergii	|Japanese barberry	|a. 3, b. Sterile cultivars or hybrids are not listed.
+57	|Billardiera heterophylla	|Bluebell creeper	|1a
+58	|Bryophyllum delagoense	|Chandelier plant	|1b
+59	|Bryophyllum pinnatum	|Cathedral bells	|1b
+60	|Bryophyllum proliferum	|Green mother of millions	|1b
+61	|Buddleja davidii	|Chinese sagewood, Summer lilac	|a. 3, b. Sterile cultivars or hybrids are not listed.
+62	|Buddleja madagascariensis	|Madagascar sagewood	|3
+63	|Cabomba caroliniana	|Cabomba, Carolina fanwort	|1a
+64	|Caesalpinia decapetala	|Mauritius thorn	|1b
+65	|Caesalpinia gilliesii	|Bird-of-paradise flower	|1b
+66	|Callisia repens	|Creeping inch plant	|1b
+67	|Callistemon citrinus	Lemon bottlebrush	3
+68	|Callistemon rigidus	|Stiff-leaved bottlebrush	|See below a. 1b in Eastern Cape and Western Cape. b. 3 in Free State, Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga, North-West, and Northern Cape.
+69	|Callistemon viminalis	|Weeping bottlebrush	|See below a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga. b. 3 in Free State, Gauteng, North-West, Northern Cape and Western Cape. c. Sterile cultivars or hybrids are not listed.
+70	|Calotropis procera	|Calotropis, Giant-milkweed	|1b
+71	|Campuloclinium macrocephalum	|Pompom weed	|1b
+72	|Canna indica	|Indian shot	|a. 1b b. Sterile cultivars or hybrids are not listed.
+73	|Cardiospermum grandiflorum	|Balloon vine	|1b
+74	|Cardiospermum halicacabum	|Lesser balloon vine	|3
+75	|Carduus nutans	|Nodding thistle	|1b
+76	|Casuarina cunninghamiana	|Beefwood	|a. 2 b. 1b within 100 metres of riparian areas or untransformed land
+77	|Casuarina equisetifolia	|Horsetail tree	|2
+78	|Catharanthus roseus	|Madagascar periwinkle	|a. 1b b. Sterile cultivars or hybrids are not listed.
+79	|Celtis australis	|Nettle tree, European hackberry	|3
+80	|Celtis occidentalis	|Common hackberry	|3
+81	|Centranthus ruber	|Red valerian, Devil’s beard	|a. 1b in Western Cape b. Not listed elsewhere
+82	|Cerastium fontanum	|Common mouse-ear chickweed	|a. 1b Prince Edward and Marion Islands b. Not listed on mainland or other off-shore islands.
+83	|Cereus hexagonus	|Queen of the night	|1b
+84	|Cereus hildmannianus	|Queen of the night	|1b
+85	|Cereus jamacaru	|Queen of the night	|1b
+86	|Cestrum aurantiacum	|Orange cestrum	|1b
+87	|Cestrum elegans	|Crimson cestrum	|1b
+88	|Cestrum laevigatum	|Inkberry	|1b
+89	|Cestrum parqui	|Chilean cestrum	|1b
+90	|Cestrum species not specifically listed	|Cestrum species	|a. 3 b. Sterile cultivars or hybrids are not listed.
+91	|Chondrilla juncea	|Skeleton weed	|1a
+92	|Chromolaena odorata	|Triffid weed, Chromolaena	|1b
+93	|Cinnamomum camphora	|Camphor tree	|a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga. b. 3 in Western Cape. c. National Heritage Trees or National Monument Trees in terms of the National Heritage Resources Act, 1999, (Act No. 25 of 1999) in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga and the Western Cape, are not listed. d. Not listed elsewhere.
+94	|Cirsium vulgare	|Spear thistle, Scotch thistle	|1b
+95	|Convolvulus arvensis	|Field bindweed, Wild morning-glory	|1b
+96	|Coreopsis lanceolata	|Tickseed	|See below a. 1a b. Sterile cultivars or hybrids are not listed.
+97	|Cortaderia jubata	|Pampas grass	|1b
+98	|Cortaderia selloana	|Pampas grass	|See below a. 1a b. Sterile cultivars or hybrids are not listed.
+99	|Cotoneaster franchetii	|Cotoneaster	|1b
+
+100	|Cotoneaster glaucophyllus	|Late cotoneaster	|1b
+101	Cotoneaster pannosus	Silver leaf cotoneaster	1b
+102	Cotoneaster salicifolius	Willow-leaved showberry	1b
+103	Cotoneaster simonsii	Himalayan cotoneaster, Simon’s cotoneaster	1b
+104	Crotalaria agatiflora	Canarybird bush, Bird flower	1b
+105	Cryptostegia grandiflora	Rubber vine	1b
+106	Cryptostegia madagascariensis	Madagascar rubber vine	1b
+107	Cuscuta campestris	Common dodder	1b
+108	Cuscuta suaveolens	Lucerne dodder	1b
+109	Cylindropuntia fulgida var. fulgida	Chain-fruit cholla (previously known as rosea cactus)	1b
+110	Cylindropuntia fulgida var. mamillata	Boxing-glove cactus, Mamillate cactus	1b
+111	Cylindropuntia imbricata	Imbricate cactus, Imbricate prickly pear	1b
+112	Cylindropuntia leptocaulis	Pencil cactus	1b
+113	Cylindropuntia pallida	Pink-flowered sheathed cholla	1a
+114	Cylindropuntia spinosior	Cane cholla, Spiny cholla	1a
+115	Cytisus scoparius	Scotch broom	1a
+116	Datura ferox	Large thorn apple	1b
+117	Datura innoxia	Downy thorn apple	1b
+118	Datura stramonium	Common thorn apple	1b
+119	Diplocyclos palmatus	Lollipop-climber	1a
+120	Dolichandra unguis-cati	Cat’s claw creeper	1b
+121	Duchesnea indica	Wild strawberry	1b
+122	Duranta erecta	Forget-me-not-tree, Pigeon berry	See below
+a. 3 in Gauteng, Kwazulu-Natal, Limpopo, Mpumalanga and North-West.
+b. 2 for breeding in nurseries in Gauteng, Kwazulu-Natal, Limpopo, Mpumalanga and North-West, but may not be transferred within these Provincial boundaries.
+c. Not listed elsewhere.
+d. Sterile cultivars or hybrids are not listed.
+e. “Sheena’s Gold” cultivar is not listed.
+123	Echinodorus cordifolius	Creeping burhead	1b
+124	Echinodorus tenellus	Amazon sword plant	1b
+125	Echinopsis schickendantzii	Torch cactus	1b
+126	Echium plantagineum	Patterson’s curse	1b
+127	Echium vulgare	Blue echium	1b
+128	Egeria densa	Dense water weed	1b
+129	Eichhornia crassipes	Water hyacinth	1b
+130	Elodea canadensis	Canadian water weed	1b
+131	Elytrigia repens	Couch grass	a. 1a Prince Edward and Marion Islands.
+b. Not listed on mainland or other off-shore islands.
+132	Equisetum hyemale	Rough horsetail, Common scouring-rush	1a
+133	Eriobotrya japonica	Loquat	See below
+134	Eucalyptus camaldulensis	River red gum	See below
+a. 1b in Western Cape and Forest biome.
+b. Not listed in urban areas in Western Cape.
+c. Not listed elsewhere.
+d. The fruit of the loquat is not listed if used for human consumption.
+135	Eucalyptus cladocalyx	Sugar gum	See below
+136	Eucalyptus conferruminata (E. lehmannii misapplied in South Africa)	Spider gum	See below
+137	Eucalyptus diversicolor and hybrids, varieties and selections	Karri	See below
+138	Eucalyptus grandis (E. saligna in part) and hybrids, varieties and selections	Saligna gum, Rose gum	See below
+139	Eucalyptus tereticornis and hybrids, varieties and selections	Forest red gum	See below
+a. Category 1b within- (i) riparian areas; (ii) a Protected Area declared in terms of the Protected Areas Act; or, (iii) within a Listed Ecosystem or an ecosystem identified for conservation in terms of a Bioregional Plan or Biodiversity Management Plans published under the Act.
+b. Not listed within Nama-Karoo, Succulent Karoo and Desert biomes, excluding within any area mentioned in (a) above.
+c. Category 1b in Fynbos, Grassland, Savanna, Albany Thicket, Forest and Indian Ocean Coastal Belt biomes, but- (i) Category 2 for plantations, woodlots, bee-forage areas, wind-rows and the lining of avenues. (ii) not listed within cultivated land that is at least 50 metres away from untransformed land, but excluding within any area in (a) above. (iii) Not listed within 50 metres of the main house on a farm, but excluding in (a) above. (iv) Not listed in urban areas for trees with a diameter of more than 400 mm at 1000 mm height at the time of publishing of this Notice, but excluding in (a) above.
+140	Eugenia uniflora	Pitanga, Surinam cherry	1b
+141	Euphorbia esula	Leafy spurge	1a
+142	Euphorbia leucocephala	White poinsettia	1b
+143	Fallopia sachalinensis	Giant knotweed	1a
+144	Festuca rubra	Creeping red fescue	a. 1a Prince Edward and Marion Islands.
+b. Not listed on mainland or other offshore islands.
+145	Flaveria bidentis	Smelter’s-bush	1b
+146	Fraxinus americana	American ash	See below
+147	Fraxinus angustifolia	Algerian ash	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga and Western Cape.
+b. Not listed elsewhere.
+148	Furcraea foetida	Mauritian hemp	1a
+149	Genista monspessulana	Montpellier broom	1a
+
+150	Gleditsia triacanthos	Honey locust	a. 1b
+b. Sterile cultivars or hybrids are not listed.
+151	Glyceria maxima	Reed meadow grass, Reed sweet grass	a. 1b in Protected Areas and wetlands.
+b. Not listed elsewhere.
+152	Grevillea banksii	Australian crimson oak, Red flowering silky oak	1b
+153	Grevillea robusta	Australian silky oak	3
+154	Grevillea rosmarinifolia	Rosemary grevillea	3
+155	Hakea drupacea	Sweet hakea	1b
+156	Hakea gibbosa	Rock hakea	1b
+157	Hakea salicifolia	Willow hakea	a. 1b in Western Cape.
+b. Not listed elsewhere.
+158	Hakea sericea	Silky hakea	1b
+159	Harrisia balansae	Strangler prickly apple	1a
+160	Harrisia martinii	Moon cactus	1b
+161	Harrisia pomanensis	Midnight lady, Devil’s rope cactus	1a
+162	Harrisia tortuosa	Spiny snake cactus	1b
+163	Hedera canariensis	Canary ivy, Madeira ivy, Algerian ivy	See below
+164	Hedera helix	English ivy	a. 3
+b. Sterile cultivars or hybrids are not listed.
+165	Hedychium coccineum	Red ginger lily	1b
+166	Hedychium coronarium	White ginger lily	1b
+167	Hedychium flavescens	Yellow ginger lily	1b
+168	Hedychium gardnerianum	Kahili ginger lily	1b
+168	Homalanthus populifolius	Bleeding-heart tree	1b
+170	Houttuynia cordata	Chameleon plant	3
+171	Hydrilla verticillata	Hydrilla	1a
+172	Hydrocleys nymphoides	Water poppy	1a
+173	Hylocereus undatus	Night-blooming cereus, Dragon fruit, Pitahaya	See below
+a. 2
+b. The fruit of night-blooming cactus is not listed if used for human consumption.
+174	Hypericum androsaemum	Tutsan	1b
+175	Hypericum perforatum	St. John’s wort, Tipton weed	2
+176	Ipomoea alba	Moonflower	1b
+177	Ipomoea carnea	Morning-glory bush	1b
+178	Ipomoea indica	Morning glory	See below
+179	Ipomoea purpurea	Morning glory	See below
+a. 3
+b. Sterile cultivars or hybrids are not listed.
+180	Iris pseudacorus	Yellow flag	1a
+181	Jacaranda mimosifolia	Jacaranda	See below
+a. 1b in Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga and North-West.
+b. Not listed for urban areas in Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga and North-West.
+c. Not listed within 50 metres of the main house on a farm in Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga and North-West, for trees with a diameter of more than 400 mm at 1000 mm height at the time of publishing of this Notice, provided such trees are located outside riparian areas.
+d. Not listed elsewhere.
+182	Jatropha curcas	Physic nut	2
+183	Jatropha gossypiifolia	Cotton-leaf physic nut	1b
+184	Juniperus virginiana	Red cedar	a. 3 in Eastern Cape and Free State.
+b. Not listed elsewhere.
+185	Kunzea ericoides	Burgan, White teatree	1a
+186	Lantana – all seed-producing species or seed-producing hybrids that are non-indigenous to South Africa	Lantana, Tickberry, Cherry pie	1b
+187	Lepidium draba	Hoary cardaria	1b
+188	Leptospermum laevigatum	Australian myrtle	1b
+189	Leucaena leucocephala	Leucaena	2
+190	Ligustrum japonicum	Japanese wax-leaved privet	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West and Western Cape.
+b. 3 in Free State, Gauteng and Northern Cape.
+191	Ligustrum lucidum	Chinese wax-leaved privet	See below
+192	Ligustrum ovalifolium	Californian privet	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West and Western Cape.
+b. 3 in Free State, Gauteng and Northern Cape.
+c. Sterile cultivars or hybrids are not listed.
+193	Ligustrum sinense	Chinese privet	See below
+194	Ligustrum vulgare	Common privet	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West and Western Cape.
+b. 3 in Free State, Gauteng and Northern Cape.
+195	Lilium formosanum	Formosa lily	1b
+196	Limonium sinuatum	Statice, Sea lavender	See below
+a. 1b in Northern Cape and Western Cape.
+b. Not listed elsewhere.
+c. Sterile cultivars or hybrids are not listed.
+197	Linaria dalmatica	Dalmatian toadflax, Broadleaf toadflax	1b
+198	Linaria vulgaris	Common toadflax, Butter-and-eggs	1b
+199	Litsea glutinosa	Indian laurel	1b
+
+200	Lonicera japonica	Japanese or Hall’s honeysuckle	3
+201	Ludwigia peruviana	Water-primrose, Peruvian primrosebush	1a
+202	Luzula multiflora	Woodrush	See below
+a. 1a Prince Edward and Marion Islands.
+b. Not listed on mainland or other off-shore islands.
+203	Lythrum hyssopifolia	Hyssop loosestrife	1b
+204	Lythrum salicaria	Purple loosestrife	1a
+205	Malva dendromorpha	Tree mallow	1b
+206	Malva verticillata	Mallow	1b
+207	Malvastrum coromandelianum	Prickly malvastrum	1b
+208	Marsilea mutica	Nardoo, Australian water-clover	1a
+209	Melaleuca hypericifolia	Red-flowering tea tree	1a
+210	Melaleuca quinquenervia	Bottle brush tree, Broadleaf paperbark tree	See below
+a. 1b
+b. National Heritage Trees or National Monument Trees in terms of the National Heritage Resources Act, 1999, (Act No. 25 of 1999), are not listed.
+211	Melia azedarach	Seringa	a. 1b
+b. 3 in urban areas.
+212	Metrosideros excelsa	New Zealand Christmas tree	See below
+a. 1a in the Overstrand District.
+b. Not listed elsewhere.
+c. Sterile cultivars or hybrids are not listed.
+213	Mimosa pigra	Giant sensitive plant	1b
+214	Mirabilis jalapa	Four-o’clock, Marvel-of-Peru	1b
+215	Montanoa hibiscifolia	Tree daisy	1b
+216	Morus alba	White mulberry, Common mulberry	See below
+a. 3
+b. Sterile cultivars or hybrids are not listed.
+c. The fruit of the white mulberry is not listed if used for human consumption.
+217	Murraya paniculata	Orange Jessamine	See below
+a. 1b in KwaZulu-Natal, Limpopo and Mpumalanga.
+b. 2 for breeding in nurseries in KwaZulu-Natal, Limpopo and Mpumalanga, but may not be transferred within these Provincial boundaries.
+c. Not listed elsewhere.
+d. Sterile cultivars or hybrids are not listed.
+218	Myoporum insulare	Manatoka, Boobyalla	3
+219	Myoporum laetum	New Zealand manatoka	3
+220	Myoporum montanum	Manatoka	3
+221	Myriophyllum aquaticum	Parrot’s feather	1b
+222	Myriophyllum spicatum	Spiked water-milfoil	1b
+223	Myrtillocactus geometrizans	Bilberry cactus	1a
+224	Nassella tenuissima	White tussock	1b
+225	Nassella trichotoma	Nassella tussock	1b
+226	Nasturtium officinale	Watercress	2
+227	Nephrolepis cordifolia	Erect sword fern, Ladder sword fern	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Mpumalanga, Limpopo and Western Cape.
+b. 3 in Free State, Gauteng, KwaZulu-Natal, North-West and Northern Cape.
+c. Sterile cultivars or hybrids are not listed.
+228	Nephrolepis exaltata	Sword fern, Boston sword fern	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga, North-West and Western Cape.
+b. 3 in Free State, Gauteng and Northern Cape, North-West.
+c. Sterile cultivars or hybrids are not listed.
+229	Nerium oleander	Oleander	See below
+a. 1b
+b. Sterile cultivars or hybrids are not listed.
+230	Nicandra physalodes	Apple-of-Peru	1b
+231	Nicotiana glauca	Wild tobacco	1b
+232	Nuphar lutea	Yellow water-lily	1a
+233	Nymphaea mexicana	Yellow water lilies	1b
+234	Nymphoides peltata	Gringed waterlily, Yellow floating-heart	1a
+235	Oenothera sinuosa	Wavy-leaf gaura	3
+236	Opuntia aurantiaca	Jointed cactus	1b
+237	Opuntia elata	Orange tuna	1b
+238	Opuntia engelmannii	Small round-leaved prickly pear	1b
+239	Opuntia ficus-indica	Mission prickly pear, Sweet prickly pear	See below
+a. 1b
+b. Spineless cactus pear cultivars and selections are not listed.
+c. The fruit of the sweet prickly pear is not listed if used for human consumption.
+240	Opuntia humifusa	Large-flowered prickly pear, Creeping prickly pear	1b
+241	Opuntia leucotricha	Aaron’s-beard prickly-pear	1b
+242	Opuntia microdasys	Yellow bunny-ears, Teddy-bear cactus	1b
+243	Opuntia monacantha (O. vulgaris misapplied in South Africa)	Cochineal prickly pear, Drooping prickly pear	1b
+244	Opuntia pubescens	Velvet bur cactus	1a
+245	Opuntia robusta	Blue-leaf cactus	See below
+a. 1a
+b. Spineless cultivars and selections are not listed.
+246	Opuntia salmiana	Bur cactus	1a
+247	Opuntia spinulifera	Saucepan cactus, Large round-leaved prickly pear	1b
+248	Opuntia stricta	Pest pear of Australia	1b
+249	Opuntia tomentosa	Velvet opuntia, Velvet tree-pear	1b
+
+250	Orobanche minor	Lesser broomrape, Clover broomrape	1b
+251	Orobanche ramosa	Blue broomrape, Branched broomrape	1b
+252	Paraserianthes lophantha	Australian albizia, Stink bean	1b
+253	Parkinsonia aculeata	Jerusalem thorn	1b
+254	Parthenium hysterophorus	Famine weed	1b
+255	Paspalum quadrifarium	Tussock paspalum	1a
+256	Passiflora caerulea	Blue passion flower	1b
+257	Passiflora edulis	Purple granadilla, Passion fruit	See below
+a. 2 in Eastern Cape, Gauteng, KwaZulu-Natal, Mpumalanga, Limpopo and North-West.
+b. Not listed in urban areas in Eastern Cape, Gauteng, KwaZulu-Natal, Mpumalanga, Limpopo and North-West.
+c. Not listed elsewhere.
+d. The fruit of the purple granadilla is not listed if used for human consumption.
+258	Passiflora tripartita var. mollisima	Banana poka, Bananadilla	1b
+259	Passiflora suberosa	Devil’s pumpkin, Indigo berry	1b
+260	Passiflora subpeltata	Granadina	1b
+261	Paulownia tomentosa	Empress tree, Princess tree, Royal Paulownia	1a
+262	Peniocereus serpentinus	Serpent cactus, Snake cactus	1b
+263	Pennisetum clandestinum	Kikuyu grass	See below
+a. 1b in Protected Areas and wetlands in which it does not already occur.
+b. Not listed elsewhere.
+264	Pennisetum purpureum	Elephant grass, Napier grass	2
+265	Pennisetum setaceum	Fountain grass	See below
+a. 1b
+b. Sterile cultivars or hybrids are not listed.
+266	Pennisetum villosum	Feathertop	1b
+267	Pereskia aculeata	Pereskia, Barbados gooseberry	1b
+268	Persicaria capitata	Knotweed	1b
+269	Phytolacca americana	American pokeweed	1b
+270	Phytolacca dioica	Belhambra	3
+271	Phytolacca octandra	Forest inkberry	1b
+272	Pinus canariensis	Canary pine	3
+273	Pinus elliottii and hybrids, varieties and selections	Slash pine	See below
+a. 2 for sterile specimens.
+b. 1b for non-sterile specimens.
+274	Pinus halepensis	Aleppo pine	See below
+a. 3 in Eastern Cape, Free State and Western Cape.
+b. Not listed elsewhere.
+275	Pinus patula and hybrids, varieties and selections	Patula pine	2
+276	Pinus pinaster and hybrids, varieties and selections	Cluster pine	See below
+a. 2 for plantations and wind-rows.
+b. 1b elsewhere.
+c. National Heritage Trees or National Monument Trees in terms of the National Heritage Resources Act, 1999 (Act No. 25 of 1999), are not listed.
+277	Pinus radiata and hybrids, varieties and selections	Radiata pine, Monterey pine	See below
+a. 2 for plantations and wind-rows.
+b. 1b elsewhere.
+c. National Heritage Trees or National Monument Trees in terms of the National Heritage Resources Act, 1999 (Act No. 25 of 1999), are not listed.
+d. Specimens with a diameter (calliper width) greater than 400 mm at a height of 1000 mm at the date of publication of this Notice are not listed for urban areas in Cape Town, the Overberg District Council and Winelands District Council, except when in riparian areas where they remain Category 1b.
+278	Pinus roxburghii and hybrids, varieties and selections	Chir pine, Longifolia pine	2
+279	Pinus taeda and hybrids, varieties and selections	Loblolly pine	2
+280	Pistia stratiotes	Water lettuce	1b
+281	Pittosporum crassifolium	Karo, Stiff-leaved cheesewood	3
+282	Pittosporum undulatum	Australian cheesewood, Sweet pittosporum	1b
+283	Plectranthus barbatus var. grandis	‘Abyssinian’ coleus, Woolly plectranthus	1b
+284	Poa pratensis	Kentucky bluegrass	See below
+a. 1a Prince Edward Island.
+b. 1b Marion Island.
+c. Not listed on mainland or other off-shore islands.
+285	Polypodium aureum	Rabbits-foot fern	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. Not listed elsewhere.
+286	Pontederia cordata	Pickerel weed	1b
+287	Populus alba	White poplar	2
+288	Populus × canescens	Grey poplar, Matchwood poplar	2
+289	Prosopis glandulosa	Honey mesquite	See below
+290	Prosopis velutina and hybrids	Velvet mesquite	See below
+a. 1b in Eastern Cape, Free State, North-West and Western Cape.
+b. 3 in Northern Cape.
+c. The utilisation of the pods for fodder is not listed in the Northern Cape, Eastern Cape, Free State, North-West and Western Cape.
+d. Not listed elsewhere.
+291	Prunus serotina	Black cherry	1b
+292	Psidium cattleianum	Strawberry guava	1b
+293	Psidium guajava	Guava	See below
+a. 2 for plantations in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga and North-West.
+b. 3 elsewhere in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga and North-West.
+c. The fruit of the guava is not listed if used for human consumption.
+d. Not listed elsewhere.
+294	Psidium guineense	Brazilian guava	1b
+295	Psidium × durbanensis	Durban guava	1b
+296	Pueraria montana	Kudzu vine	1a
+297	Pyracantha angustifolia	Yellow firethorn	See below a. 1b b. Sterile cultivars or hybrids are not listed.
+298	Pyracantha coccinea	Red firethorn	See below a. 1b b. Sterile cultivars or hybrids are not listed.
+299	Pyracantha crenatoserrata	Chinese firethorn, Broad leaf firethorn	See below a. 1b b. Sterile cultivars or hybrids are not listed.
+
+300	Pyracantha crenulata	Himalayan firethorn	See below a. 1b b. Sterile cultivars or hybrids are not listed.
+301	Pyracantha koidzumii	Formosa firethorn	See below a. 1b b. Sterile cultivars or hybrids are not listed.
+302	Rhus glabra	Scarlet sumach, Vinegar bush	3
+303	Ricinus communis	Castor-oil plant	2
+304	Rivina humilis	Rivina, Bloodberry	1b
+305	Robinia pseudoacacia	Black locust	1b
+306	Rosa rubiginosa	Eglantine, Sweetbriar	1b
+307	Rubus cuneifolius and hybrid R. × proteus	American bramble	1b
+308	Rubus ellipticus	Asian wild raspberry, Yellow Himalayan raspberry	1a
+309	Rubus flagellaris	Bramble	1b
+310	Rubus fruticosus	European blackberry	See below
+a. 2
+b. The fruit of the European blackberry is not listed if used for human consumption.
+311	Rubus immixtus	Hogsback raspberry	1b
+312	Rubus niveus	Ceylon raspberry, Mysore raspberry	1b
+313	Rumex acetosella	Sheep sorrel, Red sorrel	See below
+a. 1a Prince Edward and Marion Islands.
+b. Not listed on mainland or other off-shore islands.
+314	Rumex usambarensis	East African dock	1b
+315	Sagina procumbens	Birdeye pearlwort	See below
+a. 1a Prince Edward and Marion Islands.
+b. Not listed on mainland or other off-shore islands.
+316	Sagittaria platyphylla	Delta arrowhead, Slender arrowhead	1a
+317	Salsola kali	Tumbleweed	1b
+318	Salsola tragus	Russian tumbleweed	1b
+319	Salvia tiliifolia	Lindenleaf sage	1b
+320	Salvinia minima	Small salvinia	1b
+321	Salvinia molesta	Kariba weed, Salvinia	1b
+322	Sambucus canadensis	Canadian elder	1b
+323	Sambucus nigra	European elder	1b
+324	Sasa ramosa	Dwarf yellow-striped bamboo	3
+325	Schefflera actinophylla	Australian cabbage tree, Queensland umbrella tree	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. Not listed elsewhere.
+326	Schefflera arboricola	Dwarf umbrella tree	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. Not listed elsewhere.
+327	Schefflera elegantissima	False aralia	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. Not listed elsewhere.
+328	Schinus terebinthifolius	Brazilian pepper tree	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. 3 in Free State, Gauteng, North-West, Northern Cape and Western Cape.
+329	Senna bicapsularis	Rambling cassia	1b
+330	Senna didymobotrya	Peanut butter cassia	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo, Mpumalanga and Western Cape.
+b. Not listed elsewhere.
+331	Senna hirsuta	Hairy senna, Woolly senna	1b
+332	Senna occidentalis	Stinking weed, Wild coffee	1b
+333	Senna pendula	Climbing cassia, Easter cassia	1b
+334	Senna septemtrionalis	Arsenic bush, Smooth senna	1b
+335	Sesbania punicea	Red sesbania	1b
+336	Solanum betaceum	Tree tomato	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. The fruit of the tree tomato is not listed if used for human consumption, in the Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+c. Not listed elsewhere.
+337	Solanum chrysotrichum (S. hispidum misapplied in South Africa)	Giant devil’s fig	1b
+338	Solanum elaeagnifolium	Silver-leaf bitter apple	1b
+339	Solanum mauritianum	Bugweed	1b
+340	Solanum pseudocapsicum	Jerusalem cherry	1b
+341	Solanum seaforthianum	Potato creeper	1b
+342	Solanum sisymbriifolium	Wild tomato, Dense-thorned bitter apple	1b
+343	Sorghum halepense	Johnson grass, Aleppo grass	2
+344	Spartina alterniflora	Smooth cordgrass, Salt-water cordgrass	1a
+345	Spartium junceum	Spanish broom	See below
+a. 1b in Eastern Cape and Western Cape.
+b. 3 in Free State, Gauteng, KwaZulu-Natal, Limpopo, Mpumalanga, North-West and Northern Cape.
+346	Spathodea campanulata	African flame tree	See below
+a. 3 in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. Not listed elsewhere.
+347	Sphagneticola trilobata	Singapore daisy	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. 3 in Free State, Gauteng, North-West, Northern Cape and Western Cape.
+348	Stachytarpheta cayennensis	Blue snakeweed, Cayenne snakeweed	3
+349	Stachytarpheta mutabilis	Pink snakeweed	3
+
+350	Stellaria media	Common chickweed	See below
+a. 1a Prince Edward Island.
+b. 1b Marion Island.
+c. Not listed on mainland or other off-shore islands.
+351	Syngonium podophyllum	Goose foot, Arrowhead vine	See below
+a. 1b in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga.
+b. 2 for breeding in nurseries in Eastern Cape, KwaZulu-Natal, Limpopo and Mpumalanga, but may not be transferred within these Provincial boundaries.
+c. Not listed elsewhere.
+352	Syzygium cumini	Jambolan	See below
+a. 1b
+b. The fruit of the jambolan is not listed if used for human consumption.
+353	Syzygium jambos	Rose apple	3
+354	Tamarix aphylla	Athel tree, Desert tamarisk	1b
+355	Tamarix chinensis	Chinese tamarisk	1b
+Not to be confused with indigenous Tamarix usneoides.
+356	Tamarix gallica	French tamarisk	1b
+Not to be confused with indigenous Tamarix usneoides.
+357	Tamarix ramosissima	Pink tamarisk	1b
+Not to be confused with indigenous Tamarix usneoides.
+358	Tecoma stans	Yellow bells	1b
+359	Tephrocactus articulatus	Pine cone cactus, Paper-spine cholla	1a
+360	Thevetia peruviana	Yellow oleander	1b
+361	Tipuana tipu	Tipu tree	3
+362	Tithonia diversifolia	Mexican sunflower	1b
+363	Tithonia rotundifolia	Red sunflower	1b
+364	Toona ciliata	Toon tree	3
+365	Toxicodendron succedaneum	Wax tree	1b
+366	Tradescantia fluminensis	Wandering Jew	1b
+367	Tradescantia zebrina	Wandering Jew	1b
+368	Triplaris americana	Ant tree, Triplaris	1a
+369	Tropaeolum speciosum	Chilean flame creeper, Flame nasturtium	3
+370	Ulex europaeus	European gorse	1a
+371	Verbena bonariensis	Wild verbena, Tall verbena, Purple top	1b
+372	Verbena brasiliensis	Brazilian verbena	1b
+373	Verbena rigida	Veined verbena	1b
+374	Vinca major	Greater periwinkle	See below
+375	Vinca minor	Lesser periwinkle	See below
+a. 1b
+b. Sterile cultivars or hybrids are not listed.
+376	Vitex trifolia	Indian three-leaf vitex	1b
+377	Wigandia urens var. caracasana	Wigandia	3
+378	Xanthium spinosum	Spiny cocklebur	1b
+379	Xanthium strumarium	Large cocklebur	1b
+
+
