@@ -1,0 +1,381 @@
+{
+	"access_token": "BFX5r2kOLgvkZvN",
+	"model_version": "plant_id:4.1.2",
+	"latitude": -26.20535546,
+	"longitude": 28.05110186,
+	"image": {
+		"id": "f00259f90e043c5834ede4921e561872e76eab8d",
+		"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/f00/259f90e043c5834ede4921e561872e76eab8d.jpeg",
+		"license_name": "CC BY-SA 4.0",
+		"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+		"citation": "afgto",
+		"similarity": 0.626,
+		{
+			"access_token": "fpecC7E6ILGURst",
+			"model_version": "plant_id:4.1.2",
+			"latitude": -26.20535546,
+			"longitude": 28.05110186,
+			"image": [
+				"https://plant.id/media/imgs/d6815ff4ae2743ecb7482a72b19bf77f.jpg"
+			],
+			"is_image__plant": true,
+			"is_plant_probability": 0.53555185,
+			"suggestions": [
+				{
+					"plant_name": "Musa acuminata",
+					"probability": 0.9657,
+					"similar_images": [
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/590/61dbb7d0080762858dff0dbb4adaec94d31ad.jpeg",
+							"similarity": 0.703
+						},
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/bf8/c7c8be02cd3c3cf4461593806d228c1a82202.jpeg",
+							"similarity": 0.676
+						}
+					],
+					"common_names": [
+						"edible banana",
+						"Cavendish banana"
+					],
+					"synonyms": [
+						"Musa AA Group",
+						"Musa acuminata AA Group",
+						"Musa acuminata var. burmannicoides",
+						"Musa brieyi",
+						"Musa cavendishii",
+						"Musa chinensis",
+						"Musa corniculata",
+						"Musa nana",
+						"Musa sapientum var. rio",
+						"Musa simiarum",
+						"Musa simiarum var. sylvestris",
+						"Musa sinensis"
+					],
+					"rank": "species",
+					"description": "Musa acuminata is a species of banana native to Southern Asia, its range comprising the Indian Subcontinent and Southeast Asia. Many of the modern edible dessert bananas are from this species, although some are hybrids with Musa balbisiana. First cultivated by humans around 10 kya (8000 BCE), it is one of the early examples of domesticated plants.",
+					"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/e30/e3006668a9701e44fa83065b12a0da7954fb8be7.jpg",
+					"edible_parts": [
+						"fruit",
+						"shoots"
+					],
+					"watering": {
+						"max": 2,
+						"min": 2
+					},
+					"propagation_methods": null,
+					"best_watering": "Watering this plant properly is crucial for its health. It thrives in consistently moist soil but doesn't do well in waterlogged conditions. Water it regularly, ensuring the soil stays damp but not soggy. During hot weather or dry spells, you might need to water it more frequently. However, always check the top inch of soil; if it feels dry, it's time to water. Overwatering can lead to root rot, so good drainage is essential.",
+					"best_soil_type": "The ideal soil for this plant is well-draining and rich in organic matter. A mix of potting soil with added compost or peat moss works well. The soil should retain some moisture but not stay waterlogged. Good aeration is also important, so adding perlite or sand can help improve drainage. Regularly refreshing the top layer of soil with compost can provide necessary nutrients and keep the plant healthy."
+				},
+				{
+					"plant_name": "Borassus",
+					"probability": 0.02,
+					"similar_images": [
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/374/c080cc6d2bd98f38ac35b7b56512fa1c4f95b.jpg",
+							"similarity": 0.672
+						},
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/fca/757b8e17c6c37655723ca5c2381d0cde9ebef.jpg",
+							"similarity": 0.643
+						}
+					],
+					"common_names": [
+						"borassus palm",
+						"Palmyra palms"
+					],
+					"synonyms": [
+						"Lontarus"
+					],
+					"rank": "genus",
+					"description": "Borassus (palmyra palm) is a genus of five species of fan palms, native to tropical regions of Africa, Asia and Papua New Guinea.",
+					"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/c29/c2948d73cc370f564d054813e63e1c250dcd818d.jpg",
+					"edible_parts": null,
+					"watering": null,
+					"propagation_methods": null,
+					"best_watering": "For optimal growth, it's important to water the plant deeply but infrequently. This means allowing the soil to dry out between waterings to prevent root rot. During the growing season, water the plant once a week, ensuring the water reaches the root zone. In cooler months, reduce the frequency to once every two to three weeks. Always check the soil moisture before watering to avoid overwatering.",
+					"best_soil_type": "The plant prefers well-draining soil with a sandy or loamy texture. It can tolerate a range of soil pH levels but performs best in slightly acidic to neutral soils. Adding organic matter like compost can improve soil fertility and drainage. Avoid heavy clay soils that retain too much moisture, as this can lead to root problems."
+				},
+				{
+					"plant_name": "Musa \u00d7 paradisiaca",
+					"probability": 0.0144,
+					"similar_images": [
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/c27/90bd066d414a65e03d584caa932413f53d881.jpeg",
+							"similarity": 0.751
+						},
+						{
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/c04/f26b68aae579cb17520cbdf205bedbad6b693.jpeg",
+							"similarity": 0.699
+						}
+					],
+					"common_names": [
+						"Plantain"
+					],
+					"synonyms": [
+						"Karkandela malabarica",
+						"Musa acuminata x M.",
+						"Musa acuminata x Musa balbisiana",
+						"Musa acutibracteata",
+						"Musa alphurica",
+						"Musa aphurica",
+						"Musa arakanensis",
+						"Musa bacoba",
+						"Musa balbisiana var. vittata",
+						"Musa berteroi",
+						"Musa bidigitalis",
+						"Musa carolinae",
+						"Musa champa",
+						"Musa chapara",
+						"Musa chiliocarpa",
+						"Musa consociata",
+						"Musa corbieri",
+						"Musa corniculata",
+						"Musa dacca",
+						"Musa decrescens",
+						"Musa discolor",
+						"Musa dulcissima",
+						"Musa emasculata",
+						"Musa humilis",
+						"Musa ingrata",
+						"Musa jaheri",
+						"Musa maculata",
+						"Musa megalocarpa",
+						"Musa mensaria",
+						"Musa mirabilis",
+						"Musa nigra",
+						"Musa odorata",
+						"Musa oleracea",
+						"Musa ornata var. normalis",
+						"Musa pallida",
+						"Musa paradisiaca",
+						"Musa paradisiaca dongila",
+						"Musa paradisiaca funu-nua",
+						"Musa paradisiaca kilola",
+						"Musa paradisiaca seluka",
+						"Musa paradisiaca subsp. sapientum",
+						"Musa paradisiaca tuba",
+						"Musa paradisiaca var. regia",
+						"Musa paradisiaca var. sapientum",
+						"Musa polycarpa",
+						"Musa prematura",
+						"Musa protractorachis",
+						"Musa purpureotomentosa",
+						"Musa sapidisiaca",
+						"Musa sapientum",
+						"Musa sapientum dubia",
+						"Musa trichocarpa",
+						"Musa vittata",
+						"Musa x sapientum",
+						"Musa \u00d7 mensaria",
+						"Musa \u00d7 paradisiaca subsp. normalis",
+						"Musa \u00d7 sapidisiaca",
+						"Musa \u00d7 sapientum subsp. paradisiaca",
+						"Musa \u00d7 sapientum var. paradisiaca",
+						"Musa \u00d7decrescens var. pembuki",
+						"Musa \u00d7decrescens var. rubromaculata",
+						"Musa \u00d7decrescens var. viridis",
+						"Musa \u00d7emasculata var. kiala",
+						"Musa \u00d7emasculata var. kimbende",
+						"Musa \u00d7emasculata var. lomba",
+						"Musa \u00d7emasculata var. zengani",
+						"Musa \u00d7paradisiaca subsp. normalis",
+						"Musa \u00d7paradisiaca subsp. sapientum",
+						"Musa \u00d7paradisiaca var. acicularis",
+						"Musa \u00d7paradisiaca var. bende",
+						"Musa \u00d7paradisiaca var. bilul",
+						"Musa \u00d7paradisiaca var. champa",
+						"Musa \u00d7paradisiaca var. cinerea",
+						"Musa \u00d7paradisiaca var. coarctata",
+						"Musa \u00d7paradisiaca var. compressa",
+						"Musa \u00d7paradisiaca var. coriacea",
+						"Musa \u00d7paradisiaca var. corniculata",
+						"Musa \u00d7paradisiaca var. dacca",
+						"Musa \u00d7paradisiaca var. exsicca",
+						"Musa \u00d7paradisiaca var. fatua",
+						"Musa \u00d7paradisiaca var. glaberrima",
+						"Musa \u00d7paradisiaca var. glauca",
+						"Musa \u00d7paradisiaca var. kitebbe",
+						"Musa \u00d7paradisiaca var. lacatan",
+						"Musa \u00d7paradisiaca var. longa",
+						"Musa \u00d7paradisiaca var. lunaris",
+						"Musa \u00d7paradisiaca var. magna",
+						"Musa \u00d7paradisiaca var. martabarica",
+						"Musa \u00d7paradisiaca var. maxima",
+						"Musa \u00d7paradisiaca var. mensaria",
+						"Musa \u00d7paradisiaca var. odorata",
+						"Musa \u00d7paradisiaca var. oleracea",
+						"Musa \u00d7paradisiaca var. papillosa",
+						"Musa \u00d7paradisiaca var. paradisiaca",
+						"Musa \u00d7paradisiaca var. punctata",
+						"Musa \u00d7paradisiaca var. purpurascens",
+						"Musa \u00d7paradisiaca var. regia",
+						"Musa \u00d7paradisiaca var. rubra",
+						"Musa \u00d7paradisiaca var. sanguinea",
+						"Musa \u00d7paradisiaca var. suaveolens",
+						"Musa \u00d7paradisiaca var. subrubea",
+						"Musa \u00d7paradisiaca var. ternatensis",
+						"Musa \u00d7paradisiaca var. tetragona",
+						"Musa \u00d7paradisiaca var. tombak",
+						"Musa \u00d7paradisiaca var. ulnaris",
+						"Musa \u00d7paradisiaca var. violacea",
+						"Musa \u00d7paradisiaca var. viridis",
+						"Musa \u00d7paradisiaca var. vittata",
+						"Musa \u00d7sapientum subsp. paradisiaca",
+						"Musa \u00d7sapientum var. americana",
+						"Musa \u00d7sapientum var. angao",
+						"Musa \u00d7sapientum var. baca",
+						"Musa \u00d7sapientum var. binutig",
+						"Musa \u00d7sapientum var. canara",
+						"Musa \u00d7sapientum var. canaya",
+						"Musa \u00d7sapientum var. champa",
+						"Musa \u00d7sapientum var. cinerea",
+						"Musa \u00d7sapientum var. compressa",
+						"Musa \u00d7sapientum var. cubensis",
+						"Musa \u00d7sapientum var. dacca",
+						"Musa \u00d7sapientum var. daryao",
+						"Musa \u00d7sapientum var. dinalaga",
+						"Musa \u00d7sapientum var. dool",
+						"Musa \u00d7sapientum var. dubia",
+						"Musa \u00d7sapientum var. eda",
+						"Musa \u00d7sapientum var. fieleto",
+						"Musa \u00d7sapientum var. flabellata",
+						"Musa \u00d7sapientum var. galatayan",
+						"Musa \u00d7sapientum var. garangao",
+						"Musa \u00d7sapientum var. glaberrima",
+						"Musa \u00d7sapientum var. glauca",
+						"Musa \u00d7sapientum var. grandis",
+						"Musa \u00d7sapientum var. humilis",
+						"Musa \u00d7sapientum var. inarnibal",
+						"Musa \u00d7sapientum var. kinamay",
+						"Musa \u00d7sapientum var. lacatan",
+						"Musa \u00d7sapientum var. longa",
+						"Musa \u00d7sapientum var. martabarica",
+						"Musa \u00d7sapientum var. mensaria",
+						"Musa \u00d7sapientum var. odorata",
+						"Musa \u00d7sapientum var. oleracea",
+						"Musa \u00d7sapientum var. padilat",
+						"Musa \u00d7sapientum var. pamotion",
+						"Musa \u00d7sapientum var. paradisiaca",
+						"Musa \u00d7sapientum var. pelipia",
+						"Musa \u00d7sapientum var. principe",
+						"Musa \u00d7sapientum var. putian",
+						"Musa \u00d7sapientum var. raines",
+						"Musa \u00d7sapientum var. regia",
+						"Musa \u00d7sapientum var. rubra",
+						"Musa \u00d7sapientum var. sanguinea",
+						"Musa \u00d7sapientum var. sarocsoc",
+						"Musa \u00d7sapientum var. satama",
+						"Musa \u00d7sapientum var. sision",
+						"Musa \u00d7sapientum var. suaveolens",
+						"Musa \u00d7sapientum var. ternatensis",
+						"Musa \u00d7sapientum var. tombak",
+						"Musa \u00d7sapientum var. tudlong",
+						"Musa \u00d7sapientum var. tuldoc",
+						"Musa \u00d7sapientum var. violacea",
+						"Musa \u00d7sapientum var. vittata"
+					],
+					"rank": "species",
+					"description": null,
+					"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/d0c/d0c8cda1baa0636d4bcd748afcd812466d53af99.jpg",
+					"edible_parts": null,
+					"watering": {
+						"max": 2,
+						"min": 2
+					},
+					"propagation_methods": null,
+					"best_watering": "Watering this plant properly is crucial for its health. It prefers consistently moist soil but doesn't do well in waterlogged conditions. Water it thoroughly when the top inch of soil feels dry to the touch. During the growing season, it may need more frequent watering, while in the dormant season, you can reduce the frequency. Always ensure good drainage to prevent root rot.",
+					"best_soil_type": "For optimal growth, this plant prefers well-draining, fertile soil. A mix of loamy soil with organic matter like compost works well. The soil should retain some moisture but not stay soggy. Adding perlite or sand can improve drainage. Regularly replenishing the soil with organic matter will help maintain its fertility."
+				}
+			],
+			"search_status": "COMPLETED",
+			"created": 1727075075.70526,
+			"created_at": "2024-09-23T09:04:35.746374"
+		}
+		"url_small": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/f00/259f90e043c5834ede4921e561872e76eab8d.small.jpeg"
+	},
+	"is_plant": false,
+	"is_plant_probability": 0.49056795,
+	"suggestions": [
+		{
+			"plant_name": "Musa acuminata",
+			"probability": 0.9783,
+			"similar_images": [
+				{
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/590/61dbb7d0080762858dff0dbb4adaec94d31ad.jpeg",
+					"similarity": 0.73
+				},
+				{
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/189/272736482d6c28c0a9c5f0cd6a98ee06ace2e.jpg",
+					"similarity": 0.663
+				}
+			],
+			"common_names": [
+				"edible banana",
+				"Cavendish banana"
+			],
+			"synonyms": [
+				"Musa AA Group",
+				"Musa acuminata AA Group",
+				"Musa acuminata var. burmannicoides",
+				"Musa brieyi",
+				"Musa cavendishii",
+				"Musa chinensis",
+				"Musa corniculata",
+				"Musa nana",
+				"Musa sapientum var. rio",
+				"Musa simiarum",
+				"Musa simiarum var. sylvestris",
+				"Musa sinensis"
+			],
+			"rank": "species",
+			"description": "Musa acuminata is a species of banana native to Southern Asia, its range comprising the Indian Subcontinent and Southeast Asia. Many of the modern edible dessert bananas are from this species, although some are hybrids with Musa balbisiana. First cultivated by humans around 10 kya (8000 BCE), it is one of the early examples of domesticated plants.",
+			"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/e30/e3006668a9701e44fa83065b12a0da7954fb8be7.jpg",
+			"edible_parts": [
+				"fruit",
+				"shoots"
+			],
+			"watering": {
+				"max": 2,
+				"min": 2
+			},
+			"propagation_methods": null,
+			"best_watering": "Watering this plant properly is crucial for its health. It thrives in consistently moist soil but doesn't do well in waterlogged conditions. Water it regularly, ensuring the soil stays damp but not soggy. During hot weather or dry spells, you might need to water it more frequently. However, always check the top inch of soil; if it feels dry, it's time to water. Overwatering can lead to root rot, so good drainage is essential.",
+			"best_soil_type": "The ideal soil for this plant is well-draining and rich in organic matter. A mix of potting soil with added compost or peat moss works well. The soil should retain some moisture but not stay waterlogged. Good aeration is also important, so adding perlite or sand can help improve drainage. Regularly refreshing the top layer of soil with compost can provide necessary nutrients and keep the plant healthy."
+		},
+		{
+			"plant_name": "Musa \u00d7 paradisiaca",
+			"probability": 0.0216,
+			"similar_images": [
+				{
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/166/09052ab53afc7fc8b3976653e45548410493d.jpeg",
+					"similarity": 0.655
+				},
+				{
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/f00/259f90e043c5834ede4921e561872e76eab8d.jpeg",
+					"similarity": 0.626
+				}
+			],
+			"common_names": [
+				"Plantain"
+			],
+			"synonyms": [
+				"Karkandela malabarica",
+				"Musa acuminata x M.",
+				"Musa acuminata x Musa balbisiana",
+				"Musa acutibracteata"
+			],
+			"rank": "species",
+			"description": null,
+			"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/d0c/d0c8cda1baa0636d4bcd748afcd812466d53af99.jpg",
+			"edible_parts": null,
+			"watering": {
+				"max": 2,
+				"min": 2
+			},
+			"propagation_methods": null,
+			"best_watering": "Watering this plant properly is crucial for its health. It prefers consistently moist soil but doesn't do well in waterlogged conditions. Water it thoroughly when the top inch of soil feels dry to the touch. During the growing season, it may need more frequent watering, while in the dormant season, you can reduce the frequency. Always ensure good drainage to prevent root rot.",
+			"best_soil_type": "For optimal growth, this plant prefers well-draining, fertile soil. A mix of loamy soil with organic matter like compost works well. The soil should retain some moisture but not stay soggy. Adding perlite or sand can improve drainage. Regularly replenishing the soil with organic matter will help maintain its fertility."
+		}
+	]
+}

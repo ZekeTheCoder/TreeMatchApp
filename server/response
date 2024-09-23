@@ -1,0 +1,185 @@
+{
+	"access_token": "BFX5r2kOLgvkZvN",
+	"model_version": "plant_id:4.1.2",
+	"custom_id": null,
+	"input": {
+		"latitude": -26.20535546,
+		"longitude": 28.05110186,
+		"similar_images": true,
+		"images": [
+			"https://plant.id/media/imgs/d3bef5400e9b48118bf987a006fb6133.jpg"
+		],
+		"datetime": "2024-09-22T00:50:33.611278+00:00"
+	},
+	"result": {
+		"classification": {
+			"suggestions": [
+				{
+					"id": "75c0ae507334464a",
+					"name": "Musa acuminata",
+					"probability": 0.9783,
+					"similar_images": [
+						{
+							"id": "59061dbb7d0080762858dff0dbb4adaec94d31ad",
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/590/61dbb7d0080762858dff0dbb4adaec94d31ad.jpeg",
+							"license_name": "CC BY-SA 4.0",
+							"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+							"citation": "Joseph Dupont",
+							"similarity": 0.73,
+							"url_small": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/590/61dbb7d0080762858dff0dbb4adaec94d31ad.small.jpeg"
+						},
+						{
+							"id": "189272736482d6c28c0a9c5f0cd6a98ee06ace2e",
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/189/272736482d6c28c0a9c5f0cd6a98ee06ace2e.jpg",
+							"license_name": "CC BY 4.0",
+							"license_url": "https://creativecommons.org/licenses/by/4.0/",
+							"citation": "birdzilla",
+							"similarity": 0.663,
+							"url_small": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/189/272736482d6c28c0a9c5f0cd6a98ee06ace2e.small.jpg"
+						}
+					],
+					"details": {
+						"common_names": [
+							"edible banana",
+							"Cavendish banana"
+						],
+						"taxonomy": {
+							"class": "Liliopsida",
+							"genus": "Musa",
+							"order": "Zingiberales",
+							"family": "Musaceae",
+							"phylum": "Tracheophyta",
+							"kingdom": "Plantae"
+						},
+						"url": "https://en.wikipedia.org/wiki/Musa_acuminata",
+						"gbif_id": 2762680,
+						"inaturalist_id": 140907,
+						"rank": "species",
+						"description": {
+							"value": "Musa acuminata is a species of banana native to Southern Asia, its range comprising the Indian Subcontinent and Southeast Asia. Many of the modern edible dessert bananas are from this species, although some are hybrids with Musa balbisiana. First cultivated by humans around 10 kya (8000 BCE), it is one of the early examples of domesticated plants.",
+							"citation": "https://en.wikipedia.org/wiki/Musa_acuminata",
+							"license_name": "CC BY-SA 3.0",
+							"license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+						},
+						"synonyms": [
+							"Musa AA Group",
+							"Musa acuminata AA Group",
+							"Musa acuminata var. burmannicoides",
+							"Musa brieyi",
+							"Musa cavendishii",
+							"Musa chinensis",
+							"Musa corniculata",
+							"Musa nana",
+							"Musa sapientum var. rio",
+							"Musa simiarum",
+							"Musa simiarum var. sylvestris",
+							"Musa sinensis"
+						],
+						"image": {
+							"value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/e30/e3006668a9701e44fa83065b12a0da7954fb8be7.jpg",
+							"citation": "//commons.wikimedia.org/wiki/User:Jorgemach7",
+							"license_name": "CC BY-SA 3.0",
+							"license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+						},
+						"edible_parts": [
+							"fruit",
+							"shoots"
+						],
+						"watering": {
+							"max": 2,
+							"min": 2
+						},
+						"propagation_methods": null,
+						"best_light_condition": "This plant prefers bright, indirect light for optimal growth. It can tolerate some direct sunlight, especially in the morning or late afternoon, but too much direct sun can scorch its leaves. If grown indoors, placing it near a window with filtered light works well. In lower light conditions, its growth may slow down, but it can still survive. Ensuring it gets enough light will help it produce healthy, vibrant leaves.",
+						"best_soil_type": "The ideal soil for this plant is well-draining and rich in organic matter. A mix of potting soil with added compost or peat moss works well. The soil should retain some moisture but not stay waterlogged. Good aeration is also important, so adding perlite or sand can help improve drainage. Regularly refreshing the top layer of soil with compost can provide necessary nutrients and keep the plant healthy.",
+						"common_uses": "Common uses of this plant are diverse and widespread. Its fruit is a popular food item, consumed fresh or used in cooking and baking. The leaves are often used as natural wrappers for steaming food, imparting a unique flavor. In some regions, the plant's fibers are used to make textiles and ropes. Additionally, its large leaves can serve as biodegradable plates or packaging materials. The plant's versatility makes it valuable in both culinary and non-culinary applications.",
+						"cultural_significance": "This plant holds significant cultural importance in many regions, particularly in tropical and subtropical areas. It is often associated with prosperity and abundance. In some cultures, its leaves are used in traditional ceremonies and rituals. The plant is also a symbol of hospitality and is frequently featured in local art and folklore. Its widespread cultivation and use in various cultural practices highlight its importance beyond just a food source.",
+						"toxicity": "This plant is generally non-toxic to humans and animals. Its leaves and fruit are safe to handle and consume. However, it's always a good idea to monitor pets and small children to ensure they don't ingest large quantities of any plant material, as it could cause minor digestive upset. Overall, it poses no significant toxicity risks.",
+						"best_watering": "Watering this plant properly is crucial for its health. It thrives in consistently moist soil but doesn't do well in waterlogged conditions. Water it regularly, ensuring the soil stays damp but not soggy. During hot weather or dry spells, you might need to water it more frequently. However, always check the top inch of soil; if it feels dry, it's time to water. Overwatering can lead to root rot, so good drainage is essential.",
+						"language": "en",
+						"entity_id": "75c0ae507334464a"
+					}
+				},
+				{
+					"id": "0e66c835d1c81c15",
+					"name": "Musa x paradisiaca",
+					"probability": 0.0216,
+					"similar_images": [
+						{
+							"id": "16609052ab53afc7fc8b3976653e45548410493d",
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/166/09052ab53afc7fc8b3976653e45548410493d.jpeg",
+							"license_name": "CC BY-SA 4.0",
+							"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+							"citation": "Salbador Duñabeitia",
+							"similarity": 0.655,
+							"url_small": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/166/09052ab53afc7fc8b3976653e45548410493d.small.jpeg"
+						},
+						{
+							"id": "f00259f90e043c5834ede4921e561872e76eab8d",
+							"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/f00/259f90e043c5834ede4921e561872e76eab8d.jpeg",
+							"license_name": "CC BY-SA 4.0",
+							"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+							"citation": "afgto",
+							"similarity": 0.626,
+							"url_small": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/f00/259f90e043c5834ede4921e561872e76eab8d.small.jpeg"
+						}
+					],
+					"details": {
+						"common_names": [
+							"Plantain"
+						],
+						"taxonomy": {
+							"class": "Liliopsida",
+							"genus": "Musa",
+							"order": "Zingiberales",
+							"family": "Musaceae",
+							"phylum": "Tracheophyta",
+							"kingdom": "Plantae"
+						},
+						"url": "https://en.wikipedia.org/wiki/Musa_×_paradisiaca",
+						"gbif_id": 2762752,
+						"inaturalist_id": 170883,
+						"rank": "species",
+						"description": null,
+						"synonyms": [
+							"Karkandela malabarica",
+							"Musa acuminata x M.",
+							"Musa acuminata x Musa balbisiana",
+							"Musa acutibracteata"
+						],
+						"image": {
+							"value": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/d0c/d0c8cda1baa0636d4bcd748afcd812466d53af99.jpg",
+							"citation": "https://commons.wikimedia.org/wiki/File:2018_06_TropicalIslands_IMG_2170.jpg",
+							"license_name": "GFDL 1.2",
+							"license_url": "https://www.gnu.org/licenses/old-licenses/fdl-1.2.html"
+						},
+						"edible_parts": null,
+						"watering": {
+							"max": 2,
+							"min": 2
+						},
+						"propagation_methods": null,
+						"best_light_condition": "This plant thrives in bright, indirect light. It can tolerate some direct sunlight, especially in the morning or late afternoon, but too much direct sun can scorch its leaves. If grown indoors, placing it near a window with filtered light is ideal. In low light conditions, its growth may slow down, and it might not produce as many leaves.",
+						"best_soil_type": "For optimal growth, this plant prefers well-draining, fertile soil. A mix of loamy soil with organic matter like compost works well. The soil should retain some moisture but not stay soggy. Adding perlite or sand can improve drainage. Regularly replenishing the soil with organic matter will help maintain its fertility.",
+						"common_uses": "This plant is commonly used for its fruit, which is a staple food in many tropical countries. The fruit can be eaten raw, cooked, or dried. Its leaves are often used as natural wrappers for cooking and serving food. Additionally, the plant's fibers can be used to make textiles and ropes. Its versatility makes it a valuable resource in many households.",
+						"cultural_significance": "This plant holds significant cultural importance in many tropical regions. It is often associated with prosperity and abundance. In some cultures, its leaves are used in traditional ceremonies and rituals. The plant is also a symbol of hospitality and is frequently featured in local folklore and art.",
+						"toxicity": "This plant is generally non-toxic to humans and animals. Its leaves and fruit are safe to handle and consume. However, it's always a good idea to wash the fruit thoroughly before eating. While it's not harmful, some people might have mild allergic reactions to the sap, so it's best to handle it with care.",
+						"best_watering": "Watering this plant properly is crucial for its health. It prefers consistently moist soil but doesn't do well in waterlogged conditions. Water it thoroughly when the top inch of soil feels dry to the touch. During the growing season, it may need more frequent watering, while in the dormant season, you can reduce the frequency. Always ensure good drainage to prevent root rot.",
+						"language": "en",
+						"entity_id": "0e66c835d1c81c15"
+					}
+				}
+			]
+		},
+		"is_plant": {
+			"probability": 0.49056795,
+			"threshold": 0.5,
+			"binary": false
+		}
+	},
+	"status": "COMPLETED",
+	"sla_compliant_client": true,
+	"sla_compliant_system": true,
+	"created": 1726966233.611278,
+	"completed": 1726966233.856308
+}

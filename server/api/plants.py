@@ -7,8 +7,11 @@ It includes endpoints for retrieving, creating, updating, and deleting plant rec
 """
 from flask_restx import Resource, Namespace, fields
 from flask_jwt_extended import jwt_required
-from flask import request  # , jsonify
+from flask import request, jsonify
 from models.models import Plant
+from utils import identify_plant  # Adjust the import path as necessary
+import json
+from utils import get_simulated_response
 
 
 plants_ns = Namespace(
@@ -127,3 +130,46 @@ class PlantResource(Resource):
         plant_to_delete.delete()
         # return plant_to_delete, 200  # returns deleted object
         return {"message": f"Plant {plant_to_delete.title} deleted successfully"}, 200
+
+
+@plants_ns.route('/identify')
+class IdentifyPlantResource(Resource):
+    """
+    IdentifyPlantResource class for handling the plant identification endpoint.
+    """
+    @plants_ns.doc(params={
+        'image': 'Base64 encoded image data',
+        'latitude': 'Latitude of the location',
+        'longitude': 'Longitude of the location'
+    })
+    def post(self):
+        """
+        POST method for identifying a plant.
+        Expects:
+            A JSON payload with 'image', 'latitude', and 'longitude'.
+        Returns:
+            A JSON response with the plant identification information.
+        """
+        data = request.get_json()
+        # print(data)
+
+        if data is None:
+            return {'message': 'Invalid JSON payload'}, 400
+
+        image_data_base64 = data.get('image')
+        latitude = data.get('latitude')
+        longitude = data.get('longitude')
+        print(latitude, longitude)
+
+        if not image_data_base64 or latitude is None or longitude is None:
+            return {'message': 'Missing required parameters'}, 400
+
+        plant_info = identify_plant(image_data_base64, latitude, longitude)
+
+        # Simulate response using the response file
+        # with open('response', 'r') as file:
+        #     plant_info = json.load(file)
+        plant_response_json = get_simulated_response(plant_info)
+
+        print(plant_response_json)
+        return jsonify(json.loads(plant_response_json))
