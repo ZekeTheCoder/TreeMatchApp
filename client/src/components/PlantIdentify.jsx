@@ -8,7 +8,8 @@ function PlantIdentify() {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState('');
 
-	const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
+	const apiKey = import.meta.env.VITE_APP_API_KEY;
+
 	const soilProperties = {
 		"Vachellia tortilis": {
 			pH: "6.0 - 8.5",
