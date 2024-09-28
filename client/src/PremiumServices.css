@@ -1,0 +1,31 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .nav {
+	flex: 1;
+	justify-content: center;
+}
+
+.navbar .navbar-brand {
+	margin-left: auto;
+}
+
+.service-card {
+	transition: background-color 0.3s ease;
+	border: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+	background-color: #f8f9fa;
+	/* Light background color on hover */
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+	/* Enhanced shadow effect */
+}
+
+.service-card .card-body {
+	padding: 20px;
+}
