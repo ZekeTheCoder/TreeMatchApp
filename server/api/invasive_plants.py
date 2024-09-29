@@ -8,6 +8,7 @@ It includes endpoints for retrieving, creating, updating, and deleting invasive 
 from flask_restx import Resource, Namespace, fields
 from flask_jwt_extended import jwt_required
 from flask import request
+from sqlalchemy import or_
 from models.invasive_plants_model import InvasivePlant
 
 invasive_plants_ns = Namespace(
@@ -110,3 +111,34 @@ class InvasivePlantResource(Resource):
         invasive_plant_to_delete = InvasivePlant.query.get_or_404(id)
         invasive_plant_to_delete.delete()
         return {"message": f"Invasive Plant {invasive_plant_to_delete.common_name} deleted successfully"}, 200
+
+
+@invasive_plants_ns.route('/search')
+class InvasivePlantSearch(Resource):
+    """
+    InvasivePlantSearch class for handling the invasive_plants/search endpoint.
+    It is part of the TreeMatch application API.
+    """
+    @invasive_plants_ns.doc(params={
+        'invasive_plant_name': 'The common or scientific name of the invasive plant you want to search for'
+    })
+    @invasive_plants_ns.marshal_with(invasive_plant_model, as_list=True)
+    def get(self):
+        """
+        GET method to search for invasive plants by scientific name or common name.
+        Returns:
+            A JSON response with the list of matching invasive plants.
+        """
+        invasive_name = request.args.get('invasive_plant_name')
+
+        query = InvasivePlant.query
+        if invasive_name:
+            query = query.filter(
+                or_(
+                    InvasivePlant.scientific_name.ilike(f'%{invasive_name}%'),
+                    InvasivePlant.common_name.ilike(f'%{invasive_name}%')
+                )
+            )
+
+        results = query.all()
+        return [plant.to_dict() for plant in results]
