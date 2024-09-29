@@ -57,7 +57,7 @@ const Header = () => {
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container-fluid">
 				{/* Logo */}
-				<Link to="/" className="navbar-brand">
+				<Link to="/" className="navbar-brand mx-auto">
 					TreeMatch
 				</Link>
 
