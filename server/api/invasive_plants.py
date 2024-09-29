@@ -9,6 +9,7 @@ from flask_restx import Resource, Namespace, fields
 from flask_jwt_extended import jwt_required
 from flask import request
 from sqlalchemy import or_
+from sqlalchemy.exc import SQLAlchemyError
 from models.invasive_plants_model import InvasivePlant
 
 invasive_plants_ns = Namespace(
@@ -120,25 +121,47 @@ class InvasivePlantSearch(Resource):
     It is part of the TreeMatch application API.
     """
     @invasive_plants_ns.doc(params={
-        'invasive_plant_name': 'The common or scientific name of the invasive plant you want to search for'
+        'invasive_plant_name': 'Name of the invasive plant (common or scientific) you seraching for',
+        'page': 'Page number',
+        'per_page': 'Number of items per page'
     })
-    @invasive_plants_ns.marshal_with(invasive_plant_model, as_list=True)
+    # @invasive_plants_ns.marshal_with(invasive_plant_model, as_list=True)
+    @jwt_required()
     def get(self):
         """
         GET method to search for invasive plants by scientific name or common name.
         Returns:
             A JSON response with the list of matching invasive plants.
         """
-        invasive_name = request.args.get('invasive_plant_name')
+        try:
+            invasive_name = request.args.get('invasive_plant_name')
+            page = request.args.get('page', 1, type=int)
+            per_page = request.args.get('per_page', 10, type=int)
 
-        query = InvasivePlant.query
-        if invasive_name:
-            query = query.filter(
-                or_(
-                    InvasivePlant.scientific_name.ilike(f'%{invasive_name}%'),
-                    InvasivePlant.common_name.ilike(f'%{invasive_name}%')
+            query = InvasivePlant.query
+            if invasive_name:
+                query = query.filter(
+                    or_(
+                        InvasivePlant.scientific_name.ilike(
+                            f'%{invasive_name}%'),
+                        InvasivePlant.common_name.ilike(f'%{invasive_name}%')
+                    )
                 )
-            )
 
-        results = query.all()
-        return [plant.to_dict() for plant in results]
+            pagination = query.paginate(
+                page=page, per_page=per_page, error_out=False)
+            results = [plant.to_dict() for plant in pagination.items]
+
+            return {
+                'total': pagination.total,
+                'pages': pagination.pages,
+                'current_page': pagination.page,
+                'per_page': pagination.per_page,
+                'results': results
+            }
+
+        except SQLAlchemyError as e:
+            return {'message': 'An error occurred while querying the database.', 'error': str(e)}, 500
+        # exceptions that are not SQLAlchemy-related.
+        except Exception as e:
+            return {'message': 'An unexpected error occurred.', 'error': str(e)}, 500
