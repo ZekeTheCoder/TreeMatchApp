@@ -9,7 +9,7 @@ const LandingPage = () => {
 	return (
 		<>
 			{/* Hero Section */}
-			<div className="hero bg-success text-white text-center py-5">
+			<div className="hero bg-success text-white text-center py-5 d-flex align-items-center justify-content-center" style={{ borderTop: '5px solid black', height: '80vh' }}>
 				<div className="container">
 					<h1 className="display-4">Welcome to <span className="text-warning">TreeMatch Premium</span></h1>
 					<p className="lead">Discover personalized plant care tips, exclusive plant varieties, and more!</p>
@@ -23,18 +23,20 @@ const LandingPage = () => {
 				<div className="row text-center mt-4">
 					{/* Soil Property Recommendation */}
 					<div className="col-md-4">
-						<FaMountain size={50} className="mb-3 text-success" />
-						<h5>Soil Property Recommendation</h5>
-						<p>
-							Get tailored recommendations on the best soil properties for your plants
-							based on your exact location. Whether you're growing in sandy, clay, or loamy soil,
-							we provide expert advice on amendments and treatments to ensure optimal plant health.
-						</p>
+						<div className="card">
+							<FaMountain size={50} className="mb-3 text-success mx-auto" />
+							<h5>Soil Property Recommendation</h5>
+							<p>
+								Get tailored recommendations on the best soil properties for your plants
+								based on your exact location. Whether you're growing in sandy, clay, or loamy soil,
+								we provide expert advice on amendments and treatments to ensure optimal plant health.
+							</p>
+						</div>
 					</div>
 
 					{/* Identify Plants via Search Image */}
-					<div className="col-md-4">
-						<RiPlantLine size={50} className="mb-3 text-success" />
+					<div className="col-md-4"><div className="card">
+						<RiPlantLine size={50} className="mb-3 text-success mx-auto" />
 						<h5>Identify Plants via Image Search</h5>
 						<p>
 							Simply upload a photo of any plant, and our advanced AI-driven tool will identify
@@ -42,16 +44,18 @@ const LandingPage = () => {
 							TreeMatch Premium helps you learn its name, care requirements, and more, all from a single picture.
 						</p>
 					</div>
+					</div>
 
 					{/* Invasive Plants Identification */}
-					<div className="col-md-4">
-						<GiPlantWatering size={50} className="mb-3 text-success" />
+					<div className="col-md-4"><div className="card">
+						<GiPlantWatering size={50} className="mb-3 text-success mx-auto" />
 						<h5>Invasive Plants Identification</h5>
 						<p>
 							Protect your garden from harmful invasive species. Our service helps you quickly
 							detect invasive plants in your area and provides guidance on effective removal methods.
 							Stay informed and safeguard your ecosystem by learning which plants pose a threat.
 						</p>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -64,10 +68,10 @@ const LandingPage = () => {
 					<div className="col-md-4">
 						<div className="card pricing-card">
 							<div className="card-body">
-								<h5 className="card-title">Basic Plan</h5>
-								<p className="card-text">R9.99/month</p>
+								<h5 className="card-title">Free Plan</h5>
+								<p className="card-text">R0.00/month</p>
 								<p>Access to basic plant care tips and limited plant varieties.</p>
-								<a href="#subscribe" className="btn btn-primary">Subscribe</a>
+								<a href="/login" className="btn btn-success">Try it now</a>
 							</div>
 						</div>
 					</div>
@@ -77,7 +81,7 @@ const LandingPage = () => {
 								<h5 className="card-title">Premium Plan</h5>
 								<p className="card-text">R19.99/month</p>
 								<p>Access to expert advice, exclusive plants, and premium support.</p>
-								<a href="#subscribe" className="btn btn-success">Subscribe</a>
+								<a href="#subscribe" className="btn btn-secondary ">Subscribe</a>
 							</div>
 						</div>
 					</div>
@@ -87,7 +91,7 @@ const LandingPage = () => {
 								<h5 className="card-title">Annual Plan</h5>
 								<p className="card-text">R199/year</p>
 								<p>Save money by subscribing annually and get all premium benefits.</p>
-								<a href="#subscribe" className="btn btn-warning">Subscribe</a>
+								<a href="#subscribe" className="btn btn-dark">Subscribe</a>
 							</div>
 						</div>
 					</div>
