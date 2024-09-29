@@ -1,5 +1,20 @@
-
+"""
+utils.py - This module contains utility functions for the TreeMatch application.
+--------------------------------------------------------------------------------
+It includes functions for retrieving soil properties, generating soil recommendations,
+and identifying plants using the Plant.id API.
+"""
+import os
+import json
+import datetime
+import logging
 import requests
+from dotenv import load_dotenv
+from flask import request, jsonify
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def get_soil_property(lat: float, lon: float, property_name: str) -> dict:
@@ -36,12 +51,18 @@ def get_soil_property(lat: float, lon: float, property_name: str) -> dict:
 
     # Make the API request
     try:
-        response = requests.get(base_url, params=params)
+        response = requests.get(base_url, params=params, timeout=10)
         # Check if the request was successful
         if response.status_code == 200:
-            return response.json()
+            data = response.json()
+            # Extract the property and value
+            property_data = data.get('property', {}).get(property_name, [])
+            if property_data:
+                value = property_data[0].get('value', {}).get('value')
+                return {'property': property_name, 'value': value}
         else:
-            response.raise_for_status()  # Raises an HTTPError for bad responses
+            # Raises an HTTPError for bad responses
+            response.raise_for_status()
     except requests.exceptions.RequestException as e:
         print(f"Error making the API request: {e}")
         return {}
@@ -132,7 +153,6 @@ def get_recommendation(property_name: str, value: float) -> str:
                 'high': 'High clay content. Use raised beds or organic matter to improve drainage.'
             }
         }
-        # Add more soil properties as needed...
     }
 
     if property_name not in recommendations:
@@ -150,3 +170,186 @@ def get_recommendation(property_name: str, value: float) -> str:
         return recs['high']
     else:
         return f"Value {value} is out of range for {property_name}."
+
+
+def soil_recommendation(lat: float, lon: float, properties: list) -> dict:
+    """
+    Generates a soil recommendation report based on a list of properties.
+
+    Args:
+        lat (float): Latitude of the location.
+        lon (float): Longitude of the location.
+        properties (list): List of soil properties to query (e.g., ["ph", "nitrogen"]).
+
+    Returns:
+        dict: A dictionary containing the soil recommendation report.
+    """
+    report = {}
+    print("properties passed to function")
+    print(properties)
+    for property_name in properties:
+        # Get the soil property value
+        soil_property = get_soil_property(
+            lat, lon, property_name)
+        value = soil_property.get('value')
+
+        if value is not None:
+            # Get the recommendation based on the property value
+            recommendation = get_recommendation(property_name, value)
+            report[property_name] = {
+                'value': value,
+                'recommendation': recommendation
+            }
+        else:
+            report[property_name] = {
+                'value': None,
+                'recommendation': None
+            }
+
+    return report
+
+
+def identify_plant(image_data_base64: str, latitude: float, longitude: float) -> dict:
+    """
+    Identifies a plant using the Plant.id API.
+
+    Args:
+            image_data_base64 (str): Base64 encoded image data.
+            latitude (float): Latitude of the location.
+            longitude (float): Longitude of the location.
+
+    Returns:
+            dict: Plant identification information.
+    """
+    # Call Plant.id API using requests
+    api_key = os.getenv('API_KEY')
+    plant_id_url = "https://plant.id/api/v3/identification"
+    plant_id_url1 = "https://plant.id/api/v3/identification?details=common_names,url,description,taxonomy,rank,gbif_id,inaturalist_id,image,synonyms,edible_parts,watering,propagation_methods,best_watering,best_light_condition,best_soil_type,common_uses,toxicity,cultural_significance"
+    headers = {
+        'Api-Key': api_key,
+        'Content-Type': 'application/json'
+    }
+    plant_id_data = {
+        "images": [image_data_base64],
+        "latitude": latitude,
+        "longitude": longitude,
+        "similar_images": True
+    }
+
+    try:
+        plant_id_response = requests.post(
+            plant_id_url1, json=plant_id_data, headers=headers, timeout=10)
+        logging.info(f"Plant.id API response: {plant_id_response.text}")
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Request failed: {e}")
+        return {"error": "Request to Plant.id API failed"}
+
+    if plant_id_response.status_code != 201:
+        logging.error(
+            f"Unexpected status code: {plant_id_response.status_code}")
+        logging.error(f"Response content: {plant_id_response.text}")
+        return {"error": "Unexpected response from Plant.id API"}
+
+    try:
+        plant_info = plant_id_response.json()
+    except requests.exceptions.JSONDecodeError as e:
+        logging.error(f"JSON decode error: {e}")
+        logging.error(f"Response content: {plant_id_response.text}")
+        return {"error": "Failed to decode JSON response from Plant.id API"}
+
+    return plant_info
+
+    # plant_id_response = requests.post(
+    #     plant_id_url, json=plant_id_data, headers=headers, timeout=10)
+    # plant_info = plant_id_response.json()
+
+    # return plant_info
+
+
+def get_simulated_response(api_response):
+    """
+    Reads the simulated response from a file and returns the parsed JSON.
+
+    Args:
+        api_response (dict): Parsed JSON response.
+
+    Returns:
+        str: JSON-formatted string of the plant response.
+    """
+    # with open(file_path, 'r') as file:
+    #     plant_info = json.load(file)
+
+    plant_info = api_response
+
+    access_token = plant_info.get("access_token")
+    model_version = plant_info.get("model_version")
+    input_details = plant_info.get("input", {})
+    latitude = input_details.get("latitude")
+    longitude = input_details.get("longitude")
+    image = input_details.get("images")
+    status = plant_info.get("status")
+    created = plant_info.get("created")
+    is_plant = plant_info.get("result", {}).get("is_plant", {}).get("binary")
+    is_plant_probability = plant_info.get(
+        "result", {}).get("is_plant", {}).get("probability")
+
+    suggestions = plant_info.get("result", {}).get(
+        "classification", {}).get("suggestions", [])
+
+    all_suggestions_info = []
+
+    if suggestions:
+        for suggestion in suggestions:
+            details = suggestion.get("details", {})
+            description = details.get("description")
+            description_value = description.get(
+                "value") if description else None
+
+            suggestion_info = {
+                "plant_name": suggestion.get("name"),
+                "probability": suggestion.get("probability"),
+                "similar_images": [],
+                "common_names": details.get("common_names", []),
+                "synonyms": details.get("synonyms", []),
+                "rank": details.get("rank"),
+                "description": description_value,
+                "image_url": details.get("image", {}).get("value"),
+                "edible_parts": details.get("edible_parts", []),
+                "watering": details.get("watering", {}),
+                "propagation_methods": details.get("propagation_methods"),
+                "best_watering": details.get("best_watering"),
+                "best_soil_type": details.get("best_soil_type")
+            }
+
+            similar_images = suggestion.get("similar_images", [])
+            for img in similar_images:
+                image_info = {
+                    "url": img.get("url"),
+                    "similarity": img.get("similarity")
+                }
+                suggestion_info["similar_images"].append(image_info)
+
+            all_suggestions_info.append(suggestion_info)
+
+    # Create plant_response dictionary
+    plant_response = {
+        "access_token": access_token,
+        "model_version": model_version,
+        "latitude": latitude,
+        "longitude": longitude,
+        "image": image,
+        "is_image__plant": is_plant,
+        "is_plant_probability": is_plant_probability,
+        "suggestions": all_suggestions_info,
+        "search_status": status,
+        "created": created,
+        "created_at": datetime.datetime.now().isoformat()
+    }
+
+    # Convert plant_response to JSON
+    plant_response_json = json.dumps(plant_response, indent=4)
+
+    # Print plant_response JSON for debugging
+    # print(plant_response_json)
+
+    return plant_response_json
