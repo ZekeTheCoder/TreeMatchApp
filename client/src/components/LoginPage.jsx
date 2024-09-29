@@ -36,7 +36,7 @@ const LoginPage = () => {
 				localStorage.setItem("authToken", access_token);
 
 				// navigate('/'); // Redirect to home page
-				window.location.href = "/login"
+				window.location.href = "/"
 			} else {
 				alert('Invalid username or password');
 			}
@@ -51,7 +51,7 @@ const LoginPage = () => {
 		<div className="container">
 			{/* Rendering the Form */}
 			<div className="form">
-				<h1>Login Page</h1>
+				<h1>Login Page - Welcome back</h1>
 				{/*  Renders a login form with two fields: username and password. */}
 				<form className="form-container">
 					{/* Username field */}
@@ -61,7 +61,7 @@ const LoginPage = () => {
 							type="text"
 							id="username"
 							className="form-control"
-							placeholder="Your username"
+							placeholder="your username*"
 							{...register('username', { required: true, maxLength: 25 })}
 						/>
 					</div>
@@ -76,7 +76,7 @@ const LoginPage = () => {
 							type="password"
 							id="password"
 							className="form-control"
-							placeholder="Your password"
+							placeholder="your password*"
 							{...register('password', { required: true, minLength: 8 })}
 						/>
 					</div>
@@ -92,7 +92,7 @@ const LoginPage = () => {
 
 					{/* Link to the sign-up page */}
 					<div className="form-group">
-						<small>Do not have an account? <Link to='/signup'>Create One Here</Link></small>
+						<small>Don't have an account? <Link to='/signup'>Sign up Here</Link></small>
 					</div>
 					<br />
 				</form>
