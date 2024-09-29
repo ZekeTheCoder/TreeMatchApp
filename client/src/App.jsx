@@ -26,23 +26,25 @@ function App() {
 				<Header />
 
 				<Routes>
-					<Route path="/" element={<LandingPage />} />
-					<Route path="/login" element={<LoginPage />} />
-					<Route path="/signup" element={<SignUpPage />} />
-					{/* Protected Routes */}
-					{loggedIn && (
+					{loggedIn ? (
 						<>
-							{/* <Route path="/" element={<LandingPage />} /> */}
-							<Route path="/premium" element={<PremiumHomePage />} />
+							{/* Protected Routes */}
+							<Route path="/" element={<PremiumHomePage />} />
 							<Route path="/trees" element={<Trees />} />
 							<Route path="/plant_identify" element={<PlantIdentify />} />
 							<Route path="/plant_search" element={<PlantSearch />} />
 							{/* <Route path="/map" element={<Map />} />
-							<Route path="/soil" element={<Soil />} />
-							<Route path="/profile" element={<Profile />} /> */}
+                    <Route path="/soil" element={<Soil />} />
+                    <Route path="/profile" element={<Profile />} /> */}
+						</>
+					) : (
+						<>
+							{/* Unprotected Routes */}
+							<Route path="/" element={<LandingPage />} />
+							<Route path="/login" element={<LoginPage />} />
+							<Route path="/signup" element={<SignUpPage />} />
 						</>
 					)}
-
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
