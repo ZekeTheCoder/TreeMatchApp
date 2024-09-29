@@ -16,13 +16,13 @@ soil_properties_ns = Namespace(
 # SoilProperty model serializer
 soil_property_model = soil_properties_ns.model(
     'SoilProperty', {
-        'id': fields.Integer,
-        'property_name': fields.String,
-        'description': fields.String,
-        'theme': fields.String,
-        'unit': fields.String,
-        'uncertainty': fields.Boolean,
-        'value_type': fields.String
+        'id': fields.Integer(readOnly=True, description='The unique identifier of a soil property'),
+        'property_name': fields.String(required=True, description='The name of the soil property'),
+        'description': fields.String(required=True, description='A description of the soil property'),
+        'theme': fields.String(required=True, description='The theme of the soil property'),
+        'unit': fields.String(required=True, description='The unit of measurement for the soil property'),
+        'uncertainty': fields.Boolean(required=True, description='Indicates if there is uncertainty in the soil property measurement'),
+        'value_type': fields.String(required=True, description='The type of value for the soil property')
     })
 
 
