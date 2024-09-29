@@ -6,7 +6,6 @@ This module defines the authentication resources for the TreeMatchApp server.
 It includes the SignUp, Login, and RefreshResource classes for handling user
 signup, login, and token refresh endpoints.
 """
-from flask_jwt_extended import JWTManager
 from flask_restx import Resource, Namespace, fields
 from flask import request, jsonify, make_response
 from flask_jwt_extended import (
@@ -17,6 +16,7 @@ from flask_jwt_extended import (
     jwt_required,
     get_jwt,
 )
+from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash  # , check_password_hash
 from models.models import User
 
@@ -53,7 +53,7 @@ class SignUp(Resource):
         """
         data = request.get_json()
 
-        # check if user already exists, if so, return 400 error or create new user
+        # check if user already exists
         username = data.get('username')
         user = User.query.filter_by(username=username).first()
 
@@ -96,7 +96,8 @@ class Login(Resource):
         data = request.get_json()
         username = data.get('username')
         password = data.get('password')
-        # check if user exists and password match, if not, return 400 error or login user
+
+        # check if user exists and password match
         user = User.query.filter_by(username=username).first()
 
         if not user:
@@ -107,7 +108,8 @@ class Login(Resource):
             return {"message": "Invalid username or password"}, 400
 
         # create JWT tokens if authentication is successful
-        access_token = create_access_token(identity=user.username)
+        access_token = create_access_token(
+            identity=user.username, expires_delta=timedelta(hours=1))
         refresh_token = create_refresh_token(identity=user.username)
 
         return {"access_token": access_token, "refresh_token": refresh_token}, 200
@@ -144,13 +146,17 @@ class Logout(Resource):
         print(f'Blacklisted JWT: {blacklist}')
         return {"message": "Successfully logged out"}, 200
 
+    jwt = JWTManager()
 
-# Ensure you handle the blacklist check when validating tokens
+    # Handle expired tokens
+    @jwt.expired_token_loader
+    def expired_token_callback(self, jwt_header, jwt_payload):
+        return jsonify({
+            "message": "The token has expired",
+            "error": "token_expired"
+        }), 401
 
-# jwt = JWTManager()
-
-
-# @jwt.token_in_blocklist_loader
-# def check_if_token_is_blacklisted(jwt_header, jwt_payload):
-#     jti = jwt_payload["jti"]
-#     return jti in blacklist
+    @jwt.token_in_blocklist_loader
+    def check_if_token_is_blacklisted(self, jwt_header, jwt_payload):
+        jti = jwt_payload["jti"]
+        return jti in blacklist
