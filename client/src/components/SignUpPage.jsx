@@ -54,10 +54,10 @@ const SignUpPage = () => {
 								{serverResponse}
 							</p>
 						</Alert>
-						<h1>Sign Up Page</h1>
+						<h1>Create an account</h1>
 					</>
 					:
-					<h1>Sign Up Page</h1>
+					<h1 className="mb-3 text-success mx-auto" >Create an account</h1>
 				}
 				<form className="form-container">
 					{/* Username field */}
@@ -67,7 +67,7 @@ const SignUpPage = () => {
 							type="text"
 							id="username"
 							className="form-control"
-							placeholder="Your username"
+							placeholder="your username*"
 							{...register("username", { required: true, maxLength: 25 })}
 						/>
 						{errors.username && <small style={{ color: "red" }}>Username is required</small>}
@@ -82,7 +82,7 @@ const SignUpPage = () => {
 							type="email"
 							id="email"
 							className="form-control"
-							placeholder="Your email"
+							placeholder="your email*"
 							{...register("email", { required: true, maxLength: 80 })}
 						/>
 						{errors.email && <p style={{ color: "red" }}><small>Email is required</small></p>}
@@ -97,7 +97,7 @@ const SignUpPage = () => {
 							type="password"
 							id="password"
 							className="form-control"
-							placeholder="Your password"
+							placeholder="your password*"
 							{...register("password", { required: true, minLength: 8 })}
 						/>
 						{errors.password && <p style={{ color: "red" }}><small>Password is required</small></p>}
@@ -112,7 +112,7 @@ const SignUpPage = () => {
 							type="password"
 							id="confirmPassword"
 							className="form-control"
-							placeholder="Your password"
+							placeholder="confirm your password*"
 							{...register("confirmPassword", { required: true, minLength: 8 })}
 						/>
 						{errors.confirmPassword && <p style={{ color: "red" }}><small>Confirm Password is required</small></p>}
@@ -122,7 +122,7 @@ const SignUpPage = () => {
 
 					{/* Submit Button: Calls handleSubmit(submitSignUpForm) to handle form submission */}
 					<div className="form-group">
-						<button type="button" className="btn btn-primary" onClick={handleSubmit(submitSignUpForm)}>SignUp</button>
+						<button type="button" className="btn btn-success" onClick={handleSubmit(submitSignUpForm)}>Sign Up</button>
 					</div>
 					<br />
 

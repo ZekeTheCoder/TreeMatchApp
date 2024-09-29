@@ -51,7 +51,7 @@ const LoginPage = () => {
 		<div className="container">
 			{/* Rendering the Form */}
 			<div className="form">
-				<h1>Login Page - Welcome back</h1>
+				<h1 className="mb-3 text-success mx-auto" >Login Page - Welcome back</h1>
 				{/*  Renders a login form with two fields: username and password. */}
 				<form className="form-container">
 					{/* Username field */}
@@ -86,7 +86,7 @@ const LoginPage = () => {
 
 					{/* Submit button */}
 					<div className="form-group">
-						<button type="button" className="btn btn-primary" onClick={handleSubmit(loginUserForm)}>Login</button>
+						<button type="button" className="btn btn-success" onClick={handleSubmit(loginUserForm)}>Login</button>
 					</div>
 					<br />
 
