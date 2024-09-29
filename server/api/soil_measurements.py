@@ -138,7 +138,6 @@ class GetSoilPropertyResource(Resource):
         lat = request.args.get('latitude', type=float)
         lon = request.args.get('longitude', type=float)
         # property_name = request.args.get('property_name', type=str)
-        # auth_header = request.headers.get('Authorization')
 
         if not lat or not lon:
             return {'message': 'Missing required parameters'}, 400
@@ -150,8 +149,8 @@ class GetSoilPropertyResource(Resource):
         # print(f"Property: {property_name}, Value: {value}")
         # print(f"Recommendation: {get_recommendation(property_name, value)}")
 
-        # properties = ["ph", "bulk_density", "carbon_organic", "carbon_total"]
-        properties = ["ph", "bulk_density"]
+        properties = ["ph", "bulk_density", "carbon_organic", "carbon_total"]
+        # properties = ["ph", "bulk_density"]
 
         report = soil_recommendation(lat, lon, properties)
         # Destructure and print the report
