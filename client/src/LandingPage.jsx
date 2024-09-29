@@ -13,7 +13,7 @@ const LandingPage = () => {
 				<div className="container">
 					<h1 className="display-4">Welcome to <span className="text-warning">TreeMatch Premium</span></h1>
 					<p className="lead">Discover personalized plant care tips, exclusive plant varieties, and more!</p>
-					<a href="/premium" className="btn btn-light btn-lg">Get Started</a>
+					<a href="/login" className="btn btn-light btn-lg">Get Started</a>
 				</div>
 			</div>
 
@@ -65,7 +65,7 @@ const LandingPage = () => {
 						<div className="card pricing-card">
 							<div className="card-body">
 								<h5 className="card-title">Basic Plan</h5>
-								<p className="card-text">$9.99/month</p>
+								<p className="card-text">R9.99/month</p>
 								<p>Access to basic plant care tips and limited plant varieties.</p>
 								<a href="#subscribe" className="btn btn-primary">Subscribe</a>
 							</div>
@@ -75,7 +75,7 @@ const LandingPage = () => {
 						<div className="card pricing-card">
 							<div className="card-body">
 								<h5 className="card-title">Premium Plan</h5>
-								<p className="card-text">$19.99/month</p>
+								<p className="card-text">R19.99/month</p>
 								<p>Access to expert advice, exclusive plants, and premium support.</p>
 								<a href="#subscribe" className="btn btn-success">Subscribe</a>
 							</div>
@@ -85,7 +85,7 @@ const LandingPage = () => {
 						<div className="card pricing-card">
 							<div className="card-body">
 								<h5 className="card-title">Annual Plan</h5>
-								<p className="card-text">$199/year</p>
+								<p className="card-text">R199/year</p>
 								<p>Save money by subscribing annually and get all premium benefits.</p>
 								<a href="#subscribe" className="btn btn-warning">Subscribe</a>
 							</div>
