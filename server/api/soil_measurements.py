@@ -8,9 +8,9 @@ It includes endpoints for retrieving, creating, updating, and deleting soil meas
 import requests
 from flask_restx import Resource, Namespace, fields
 from flask_jwt_extended import jwt_required
-from flask import request
+from flask import request, jsonify
 from models.soil_property_model import SoilMeasurement
-from utils import get_soil_property, get_recommendation
+from utils import get_soil_property, get_recommendation, soil_recommendation
 
 soil_measurements_ns = Namespace(
     'soil_measurements', description='A namespace for Soil Measurement related operations')
@@ -128,23 +128,41 @@ class SoilMeasurementResource(Resource):
 
 @soil_measurements_ns.route('/get_soil_property')
 class GetSoilPropertyResource(Resource):
-    # @jwt_required()
+    @jwt_required()
     @soil_measurements_ns.doc(params={
-        'latitude': 'Latitude of the location',
-        'longitude': 'Longitude of the location',
-        'property_name': 'The soil property to query (e.g., "ph")'
+        'latitude': 'Latitude of the location (e.g 9.4425)',
+        'longitude': 'Longitude of the location (e.g -0.7770)',
+        # 'property_name': 'The soil property to query (e.g., "ph")'
     })
     def get(self):
         lat = request.args.get('latitude', type=float)
         lon = request.args.get('longitude', type=float)
-        property_name = request.args.get('property_name', type=str)
-        auth_header = request.headers.get('Authorization')
+        # property_name = request.args.get('property_name', type=str)
+        # auth_header = request.headers.get('Authorization')
 
-        if not lat or not lon or not property_name:
+        if not lat or not lon:
             return {'message': 'Missing required parameters'}, 400
 
-        result = get_soil_property(lat, lon, property_name)
-        return result, 200
+        # result = get_soil_property(lat, lon, property_name)
+        # property_name = result.get('property')
+        # value = result.get('value')
+
+        # print(f"Property: {property_name}, Value: {value}")
+        # print(f"Recommendation: {get_recommendation(property_name, value)}")
+
+        # properties = ["ph", "bulk_density", "carbon_organic", "carbon_total"]
+        properties = ["ph", "bulk_density"]
+
+        report = soil_recommendation(lat, lon, properties)
+        # Destructure and print the report
+        for propety, details in report.items():
+            value = details.get('value')
+            recommendation = details.get('recommendation')
+            print(
+                f"Property: {propety}, Value: {value}, Recommendation: {recommendation}")
+
+        return report, 200
+        # return (f"Property: {property_name}, Value: {value}"), 200
 
 
 @soil_measurements_ns.route('/get_recommendation')
