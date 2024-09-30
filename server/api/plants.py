@@ -142,6 +142,7 @@ class IdentifyPlantResource(Resource):
         'latitude': 'Latitude of the location',
         'longitude': 'Longitude of the location'
     })
+    @jwt_required()
     def post(self):
         """
         POST method for identifying a plant.
