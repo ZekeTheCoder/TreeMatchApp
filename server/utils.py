@@ -238,7 +238,7 @@ def identify_plant(image_data_base64: str, latitude: float, longitude: float) ->
 
     try:
         plant_id_response = requests.post(
-            plant_id_url1, json=plant_id_data, headers=headers, timeout=10)
+            plant_id_url1, json=plant_id_data, headers=headers, timeout=30)
         logging.info(f"Plant.id API response: {plant_id_response.text}")
     except requests.exceptions.RequestException as e:
         logging.error(f"Request failed: {e}")
