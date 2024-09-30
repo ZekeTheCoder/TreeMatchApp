@@ -1,0 +1,123 @@
+// https://th.bing.com/th/id/OIP._6Naz-uYhRtgy2MzG0cmYQHaLI?w=203&h=306&c=7&r=0&o=5&dpr=1.3&pid=1.7
+{
+	"access_token": "0Vjp2S4nNk4SCPL",
+	"created": 1727647763.19485,
+	"created_at": "2024-09-30T00:09:22.415404",
+	"image": [
+		"https://plant.id/media/imgs/63643157e72341b8934e5e7c63ce399e.jpg"
+	],
+	"is_image__plant": true,
+	"is_plant_probability": 0.53555185,
+	"latitude": -26.20535546,
+	"longitude": 28.05110186,
+	"model_version": "plant_id:4.1.2",
+	"search_status": "COMPLETED",
+	"suggestions": [
+		{
+			"best_soil_type": "The ideal soil for this plant is well-draining and rich in organic matter. A mix of potting soil with added compost or peat moss works well. The soil should retain some moisture but not stay waterlogged. Good aeration is also important, so adding perlite or sand can help improve drainage. Regularly refreshing the top layer of soil with compost can provide necessary nutrients and keep the plant healthy.",
+			"best_watering": "Watering this plant properly is crucial for its health. It thrives in consistently moist soil but doesn't do well in waterlogged conditions. Water it regularly, ensuring the soil stays damp but not soggy. During hot weather or dry spells, you might need to water it more frequently. However, always check the top inch of soil; if it feels dry, it's time to water. Overwatering can lead to root rot, so good drainage is essential.",
+			"common_names": [
+				"edible banana",
+				"Cavendish banana"
+			],
+			"description": "Musa acuminata is a species of banana native to Southern Asia, its range comprising the Indian Subcontinent and Southeast Asia. Many of the modern edible dessert bananas are from this species, although some are hybrids with Musa balbisiana. First cultivated by humans around 10 kya (8000 BCE), it is one of the early examples of domesticated plants.",
+			"edible_parts": [
+				"fruit",
+				"shoots"
+			],
+			"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/e30/e3006668a9701e44fa83065b12a0da7954fb8be7.jpg",
+			"plant_name": "Musa acuminata",
+			"probability": 0.9651,
+			"propagation_methods": null,
+			"rank": "species",
+			"similar_images": [
+				{
+					"similarity": 0.703,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/590/61dbb7d0080762858dff0dbb4adaec94d31ad.jpeg"
+				},
+				{
+					"similarity": 0.676,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/bf8/c7c8be02cd3c3cf4461593806d228c1a82202.jpeg"
+				}
+			],
+			"synonyms": [
+				"Musa AA Group",
+				"Musa acuminata AA Group",
+				"Musa acuminata var. burmannicoides",
+				"Musa brieyi",
+				"Musa cavendishii",
+				"Musa chinensis",
+				"Musa corniculata",
+				"Musa nana",
+				"Musa sapientum var. rio",
+				"Musa simiarum",
+				"Musa simiarum var. sylvestris",
+				"Musa sinensis"
+			],
+			"watering": {
+				"max": 2,
+				"min": 2
+			}
+		},
+		{
+			"best_soil_type": "The plant prefers well-draining soil with a sandy or loamy texture. It can tolerate a range of soil pH levels but performs best in slightly acidic to neutral soils. Adding organic matter like compost can improve soil fertility and drainage. Avoid heavy clay soils that retain too much moisture, as this can lead to root problems.",
+			"best_watering": "For optimal growth, it's important to water the plant deeply but infrequently. This means allowing the soil to dry out between waterings to prevent root rot. During the growing season, water the plant once a week, ensuring the water reaches the root zone. In cooler months, reduce the frequency to once every two to three weeks. Always check the soil moisture before watering to avoid overwatering.",
+			"common_names": [
+				"borassus palm",
+				"Palmyra palms"
+			],
+			"description": "Borassus (palmyra palm) is a genus of five species of fan palms, native to tropical regions of Africa, Asia and Papua New Guinea.",
+			"edible_parts": null,
+			"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/c29/c2948d73cc370f564d054813e63e1c250dcd818d.jpg",
+			"plant_name": "Borassus",
+			"probability": 0.0193,
+			"propagation_methods": null,
+			"rank": "genus",
+			"similar_images": [
+				{
+					"similarity": 0.672,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/374/c080cc6d2bd98f38ac35b7b56512fa1c4f95b.jpg"
+				},
+				{
+					"similarity": 0.643,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/fca/757b8e17c6c37655723ca5c2381d0cde9ebef.jpg"
+				}
+			],
+			"synonyms": [
+				"Lontarus"
+			],
+			"watering": null
+		},
+		{
+			"best_soil_type": "For optimal growth, this plant prefers well-draining, fertile soil. A mix of loamy soil with organic matter like compost works well. The soil should retain some moisture but not stay soggy. Adding perlite or sand can improve drainage. Regularly replenishing the soil with organic matter will help maintain its fertility.",
+			"best_watering": "Watering this plant properly is crucial for its health. It prefers consistently moist soil but doesn't do well in waterlogged conditions. Water it thoroughly when the top inch of soil feels dry to the touch. During the growing season, it may need more frequent watering, while in the dormant season, you can reduce the frequency. Always ensure good drainage to prevent root rot.",
+			"common_names": [
+				"Plantain"
+			],
+			"description": null,
+			"edible_parts": null,
+			"image_url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/knowledge_base/wikidata/d0c/d0c8cda1baa0636d4bcd748afcd812466d53af99.jpg",
+			"plant_name": "Musa × paradisiaca",
+			"probability": 0.0156,
+			"propagation_methods": null,
+			"rank": "species",
+			"similar_images": [
+				{
+					"similarity": 0.751,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/c27/90bd066d414a65e03d584caa932413f53d881.jpeg"
+				},
+				{
+					"similarity": 0.699,
+					"url": "https://plant-id.ams3.cdn.digitaloceanspaces.com/similar_images/4/c04/f26b68aae579cb17520cbdf205bedbad6b693.jpeg"
+				}
+			],
+			"synonyms": [
+				"Karkandela mara",
+			],
+			"watering": {
+				"max": 2,
+				"min": 2
+			}
+		}
+	]
+}

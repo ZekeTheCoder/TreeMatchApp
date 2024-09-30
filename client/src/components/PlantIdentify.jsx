@@ -1,171 +1,185 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import axios from 'axios';
 
-function PlantIdentify() {
-	const [selectedFile, setSelectedFile] = useState(null);
-	const [selectedFileURL, setSelectedFileURL] = useState(null);
-	const [results, setResults] = useState([]);
+const PlantIdentify = () => {
+	const [plantInfo, setPlantInfo] = useState(null);
 	const [loading, setLoading] = useState(false);
-	const [error, setError] = useState('');
+	const [error, setError] = useState(null);
+	const [imageFile, setImageFile] = useState(null);
+	const [imageUrl, setImageUrl] = useState('');
+	const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
-	const apiKey = import.meta.env.VITE_APP_API_KEY;
+	// const API_Response = 
 
-	const soilProperties = {
-		"Vachellia tortilis": {
-			pH: "6.0 - 8.5",
-			texture: "Clay",
-			drainage: "Well-drained"
-		},
-		"Erythrina caffra": {
-			pH: "5.5 - 7.5",
-			texture: "Clay, Loamy",
-			drainage: "Well-drained"
-		},
-		"Fcus sur": {
-			pH: "5.5 - 7.5",
-			texture: "Clay, Loamy",
-			drainage: "Well-drained"
-		},
-		"Syzygium cordatum": {
-			pH: "5.5 - 6.5",
-			texture: "Organic ",
-			drainage: "Well-drained"
-		},
-		"Celtis africana": {
-			pH: "5.5 - 7.5",
-			texture: "Organic ",
-			drainage: "Well-drained"
-		},
-		"Harpephyllum caffram": {
-			pH: "5.5 - 7.5",
-			texture: "Organic ",
-			drainage: "Well-drained"
-		},
-		"Podocarpus falcatus": {
-			pH: "5.0 - 6.5",
-			texture: "Orgainic",
-			drainage: "Well-drained"
-		},
-		"Pinus patula": {
-			pH: "5.5 - 6.5",
-			texture: "Loamy",
-			drainage: "Well-drained"
-		},
+	// handle image upload
+	// const handleImageUpload = (e) => {
+	// 	const file = e.target.files[0];
+	// 	if (file) {
+	// 		setImageFile(file);
+	// 		setImageUrl('');
+	// 	}
+	// };
 
-
+	// handle URL change
+	const handleUrlChange = (e) => {
+		setImageUrl(e.target.value);
+		setImageFile(null);
 	};
 
-	const handleFileChange = (event) => {
-		const file = event.target.files[0];
-		setSelectedFile(file);
-
-
-		const fileURL = URL.createObjectURL(file);
-		setSelectedFileURL(fileURL);
-	};
-
-	const handleUpload = async () => {
-		if (!selectedFile) return;
-
+	const handleSubmit = async (e) => {
+		e.preventDefault();
 		setLoading(true);
-		setError('');
-		setResults([]);
-
-		const reader = new FileReader();
-		reader.readAsDataURL(selectedFile);
-		reader.onload = async () => {
-			const base64Image = reader.result.split(',')[1];
-
-			const apiKey1 = '';
-			const url = 'https://api.plant.id/v2/identify';
 
 
-			const request = {
-				api_key: apiKey1,
-				images: [base64Image],
-				plant_language: 'en',
-				modifiers: ['crops_fast', 'similar_images'],
-				// plant_details: ["common_names", "taxonomy", "url"],
-			};
 
-			try {
-				const response = await axios.post(url, request);
-				// const response = await axios.get(url);
-				console.log(response.data)
-				setResults(response.data.suggestions);
-				console.log(response.data.suggestions)
-				console.table(results)
-				console.log(response.data.suggestions.plant_details)
-				console.table(results)
-			} catch (err) {
-				setError('Error identifying plant. Please try again.');
-			} finally {
-				setLoading(false);
-			}
+		const request = {
+			latitude: -26.20535546,
+			longitude: 28.05110186,
+			// ...(imageFile ? { image: imageFile } : {}),
+			...(imageUrl ? { image: imageUrl } : {})
 		};
+
+
+		const jwt_token = localStorage.getItem('authToken')
+
+		// setPlantInfo(API_Response); // Update state with the fetched data
+		// console.table(plantInfo)
+
+		try {
+			const response = await axios.post(`${BASE_URL}/plants/identify`, request, {
+				headers: {
+					Authorization: `Bearer ${jwt_token}`,
+				},
+			});
+			console.log(response.data);
+			setPlantInfo(response.data);
+			// setPlantInfo(API_Response); 
+			// console.table(plantInfo)
+			console.log(plantInfo);
+			setError(null);
+		} catch (err) {
+			console.error(err);
+			setError('Failed to identify the plant');
+		} finally {
+			setLoading(false);
+		}
 	};
 
 	return (
-		<div className="App">
-			<h1>Plant Species Identifier</h1>
-			<div className='btn_wrap'>
-				<input type="file" onChange={handleFileChange} />
-				<button onClick={handleUpload} disabled={loading}>
-					{loading ? 'Identifying...' : 'Identify'}
-				</button>
-			</div>
-
-
-			{selectedFileURL && (
-				<div>
-					<h2>Uploaded Image:</h2>
-					<img src={selectedFileURL} alt="Uploaded Plant" style={{ width: '300px', margin: '10px 0' }} />
+		<div className="container mt-5">
+			<h1>Plant Identifier</h1>
+			<form onSubmit={handleSubmit} className="mb-3">
+				{/* <div className="form-group">
+					<label htmlFor="imageUpload">Upload Image</label>
+					<input
+						type="file"
+						className="form-control"
+						id="imageUpload"
+						accept="image/*"
+						onChange={handleImageUpload}
+					/>
+				</div> */}
+				<div className="form-group mt-3">
+					<label htmlFor="imageUrl">or Enter Image URL</label>
+					<input
+						type="url"
+						className="form-control"
+						id="imageUrl"
+						placeholder="https://example.com/image.jpg"
+						value={imageUrl}
+						onChange={handleUrlChange}
+					/>
 				</div>
+				<button type="submit" className="btn btn-primary mt-3">Identify Plant</button>
+			</form>
+
+
+			{error && (
+				<div className="text-center text-danger">{error}</div>
 			)}
 
-			{error && <p style={{ color: 'red' }}>{error}</p>}
-
-			{results.length > 0 && (
+			{plantInfo && (
 				<div>
-					<h2>Identification Results:</h2>
-					<ul>
-						{results.map((result, index) => (
-							<li key={index}>
-								<strong>{result.plant_name}</strong> - Confidence: {Math.round(result.probability * 100)}%
-								{result.plant_details && (
-									<div>
-										<h4>Plant Details:</h4>
-										<p><strong>Scientific Name:</strong> {result.plant_details.scientific_name}</p>
-										<p><strong>Genus:</strong> {result.plant_details.structured_name.genus}</p>
-										<p><strong>Species:</strong> {result.plant_details.structured_name.species}</p>
-									</div>
-								)}
-								{/* {result.similar_images && (
-									<div>
-										<h4>Similar Images:</h4>
-										{result.similar_images.map((image, i) => (
-											<img key={i} src={image.url} alt={`Similar ${i}`} style={{ width: '100px', margin: '5px' }} />
-										))}
-									</div>
-								)} */}
-								{soilProperties[result.plant_name] && (
-									<div>
-										<h4>Soil Properties:</h4>
-										<p><strong>pH Level:</strong> {soilProperties[result.plant_name].pH}</p>
-										<p><strong>Soil Texture:</strong> {soilProperties[result.plant_name].texture}</p>
-										<p><strong>Drainage:</strong> {soilProperties[result.plant_name].drainage}</p>
-									</div>
-								)}
-							</li>
+					<h2 className="text-center">{plantInfo.suggestions[0].plant_name}</h2>
+					<h3 className="text-center text-muted">
+						{plantInfo.suggestions[0].common_names.join(", ")}
+					</h3>
+					<div className="row">
+						<div className="col-md-6">
+							<img
+								src={plantInfo.suggestions[0].image_url}
+								alt={plantInfo.suggestions[0].plant_name}
+								className="img-fluid rounded"
+							/>
+						</div>
+						<div className="col-md-6">
+							<p>
+								<strong>Description:</strong> {plantInfo.suggestions[0].description}
+							</p>
+							<p>
+								<strong>Best Soil Type:</strong> {plantInfo.suggestions[0].best_soil_type}
+							</p>
+							<p>
+								<strong>Watering Guidelines:</strong> {plantInfo.suggestions[0].best_watering}
+							</p>
+							<p>
+								<strong>Propagation Methods:</strong> {plantInfo.suggestions[0].propagation_methods || "N/A"}
+							</p>
+							<p>
+								<strong>Edible Parts:</strong> {plantInfo.suggestions[0].edible_parts ? plantInfo.suggestions[0].edible_parts.join(", ") : "N/A"}
+							</p>
+							<p>
+								<strong>Synonyms:</strong> {plantInfo.suggestions[0].synonyms.join(", ")}
+							</p>
+						</div>
+					</div>
+
+					<h3 className="mt-4">Similar Images</h3>
+					<div className="row">
+						{plantInfo.suggestions[0].similar_images.map((image, index) => (
+							<div className="col-md-6 mb-3" key={index}>
+								<img
+									src={image.url}
+									alt={`Similar plant ${index + 1}`}
+									className="img-fluid rounded"
+								/>
+							</div>
 						))}
-					</ul>
+					</div>
+
+					<h3 className="mt-4">Suggestions for Alternative Plants</h3>
+					{plantInfo.suggestions.map((suggestion, index) => (
+						<div className="card mb-3" key={index}>
+							<div className="row g-0">
+								<div className="col-md-4">
+									<img
+										src={suggestion.image_url}
+										alt={suggestion.plant_name}
+										className="img-fluid rounded-start"
+									/>
+								</div>
+								<div className="col-md-8">
+									<div className="card-body">
+										<h5 className="card-title">{suggestion.plant_name}</h5>
+										<p className="card-text">
+											<strong>Common Names:</strong> {suggestion.common_names.join(", ") || "N/A"}
+										</p>
+										<p className="card-text">
+											<strong>Best Soil Type:</strong> {suggestion.best_soil_type}
+										</p>
+										<p className="card-text">
+											<strong>Watering:</strong> {suggestion.best_watering}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					))}
 				</div>
 			)}
+
 		</div>
 	);
-}
+};
 
 export default PlantIdentify;
-
-
-
