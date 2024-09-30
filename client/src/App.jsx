@@ -9,8 +9,9 @@ import PlantSearch from './components/PlantSearch';
 import PremiumHomePage from "./PremiumHomePage";
 import LandingPage from './LandingPage';
 import Trees from './components/Trees';
-// import Map from './components/Map'; //
-// import Soil from './components/Soil';
+import InvasivePlant from './components/InvasivePlant';
+import SoilProperty from './components/SoilProperty';
+import SoilLocations from './components/SoilLocations';;
 // import Profile from './components/Profile';
 
 function App() {
@@ -33,9 +34,10 @@ function App() {
 							<Route path="/trees" element={<Trees />} />
 							<Route path="/plant_identify" element={<PlantIdentify />} />
 							<Route path="/plant_search" element={<PlantSearch />} />
-							{/* <Route path="/map" element={<Map />} />
-                    <Route path="/soil" element={<Soil />} />
-                    <Route path="/profile" element={<Profile />} /> */}
+							<Route path="/invasive_plant_search" element={<InvasivePlant />} />
+							<Route path="/soil_property" element={<SoilProperty />} />
+							<Route path="/soil_locations" element={<SoilLocations />} />
+							{/* <Route path="/profile" element={<Profile />} /> */}
 						</>
 					) : (
 						<>

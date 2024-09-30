@@ -60,7 +60,7 @@ function InvasivePlant() {
 
 	return (
 		<div className="container mt-4">
-			<h2>Invasive Plant Search</h2>
+			<h2 className="text-success">Invasive Plant Search</h2>
 
 			<div className="input-group mb-3">
 				{/* Search Input */}
@@ -73,7 +73,7 @@ function InvasivePlant() {
 				/>
 				{/* Search Button */}
 				<div className="input-group-append">
-					<button className="btn btn-primary" onClick={handleSearch} disabled={loading}>
+					<button className="btn btn-primary bg-success" onClick={handleSearch} disabled={loading}>
 						{loading ? <Spinner animation="border" size="sm" /> : 'Search'}
 					</button>
 				</div>
